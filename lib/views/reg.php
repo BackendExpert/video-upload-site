@@ -29,7 +29,7 @@
                             
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="reset" value="CLear" class="btn btn-senoundary">
+                                    <input type="reset" value="CLear" class="btn btn-secondary">
                                 </div>
                                 <div class="col-lg-6">
                                     <input type="submit" value="SignUp" class="btn btn-success" name="signup_user">
