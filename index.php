@@ -1,6 +1,7 @@
 <?php include("lib/layouts/header.php"); ?>
 <link rel="stylesheet" href="css/style.css">
 <?php include("lib/layouts/nav.php"); ?>
+<link rel="stylesheet" href="node_modules/@jehankandy/jkcss/index.css">
 
     <div class="container">
         <h2 class="site-title">Welcome to Site</h2>
@@ -46,7 +47,7 @@
                         <br>
                         <div class="row">
                             <div class="col-lg-12">
-                                <input type="submit" value="Search Videos" name="search_vid" class="btn btn-success">
+                                <input type="submit" value="Search Videos" name="search_vid" class="jkbtn jkbtn-green">
                             </div>
                         </div>
                     </form>
