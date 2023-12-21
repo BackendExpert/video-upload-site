@@ -9,10 +9,17 @@
         <div class="row">
             <div class="card">
                 <div class="search-filter">
-                    hellp
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <input type="text" name="search" id="" placeholder="Search" class="form-control">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+        <hr>
 
     </div>
 
