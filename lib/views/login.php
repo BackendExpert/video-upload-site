@@ -14,7 +14,8 @@
                         <i class="fas fa-user"></i> Login Here
                     </div>
                     <div class="card-body">
-                        
+                        <label for="username">Username : </label><br>
+                        <input type="text" name="username" id="" class="form-control"><br>
                     </div>
                 </div>
             </div>
