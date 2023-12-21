@@ -16,10 +16,10 @@
                     <div class="card-body">
                         <form action="" method="post">
                             <label for="username">Username : </label><br>
-                            <input type="text" name="username" id="" class="form-control"><br>
+                            <input type="text" name="username" id="" class="form-control" required><br>
 
                             <label for="pass">Password : </label><br>
-                            <input type="password" name="password" id="" class="form-control"><br>
+                            <input type="password" name="password" id="" class="form-control" required><br>
 
                             <input type="submit" value="Login" class="btn btn-success" name="login_user" style="width:100%;">
                         </form>
