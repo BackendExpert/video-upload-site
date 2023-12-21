@@ -19,7 +19,7 @@
       </ul>
       <span class="navbar-text">
         <!-- <a href=""><button class="btn btn-primary"><i class="fas fa-user-alt"></i> Login</button></a> -->
-        <a href="views/login.php" style="text-decoration:none;"><i class="fas fa-user-alt"></i> Login</a>
+        <a href="lib/views/login.php" style="text-decoration:none;"><i class="fas fa-user-alt"></i> Login</a>
       </span>
     </div>
   </div>
