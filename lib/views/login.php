@@ -21,7 +21,7 @@
                             <label for="pass">Password : </label><br>
                             <input type="password" name="password" id="" class="form-control" required><br>
 
-                            <input type="submit" value="Login" class="jkbtn jkbtn-green" name="login_user" style="width:100%;">
+                            <input type="submit" value="Login" class="jk-btn jk-green" name="login_user" style="width:100%;">
                         </form>
                         <br>
                         <a href="">forgent Password ?</a><br>
