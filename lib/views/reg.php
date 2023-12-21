@@ -29,10 +29,10 @@
                             
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="reset" value="CLear" class="btn btn-secondary" style="width:100%;">
+                                    <input type="reset" value="CLear" class="jkbtn jkbtn-gray" style="width:100%;">
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="submit" value="SignUp" class="btn btn-success" name="signup_user" style="width:100%;">
+                                    <input type="submit" value="SignUp" class="jkbtn jkbtn-green" name="signup_user" style="width:100%;">
                                 </div>
                             </div>
 
