@@ -8,7 +8,9 @@
 
         <div class="row">
             <div class="col-lg-6">
-
+                <form action="" method="post">
+                    
+                </form>
             </div>
             <div class="col-lg-6">
                 <form action="" method="post">
