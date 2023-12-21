@@ -12,7 +12,7 @@
                     <form action="" method="post">
                         <div class="row">
                             <div class="col-lg-12">
-                                <input type="text" name="search" id="" placeholder="Search" class="form-control">
+                                <input type="text" name="search" id="" placeholder="Search" class="form-control" required>
                             </div>
                         </div>
                         <br>
@@ -33,6 +33,11 @@
                                     <option value="720p">720p</option>
                                     <option value="1080p">1080p</option>
                                 </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <input type="submit" value="Search" name="search_vid" class="btn btn-success">
                             </div>
                         </div>
                     </form>
