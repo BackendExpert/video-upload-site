@@ -5,6 +5,8 @@
         $pass = "";
         $db_name = "video_site_db";
 
+        $con = mysqli_connect($server, $user, $pass, $db_name);
+
         
     }
 
