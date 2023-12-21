@@ -23,6 +23,8 @@
 
                             <input type="submit" value="Login" class="btn btn-success" name="login_user" style="width:100%;">
                         </form>
+                        <a href="">forgent Password ?</a>
+                        Don't have an Account ? <a href="">SignUp</a>
                     </div>
                 </div>
             </div>
