@@ -11,21 +11,21 @@
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-header">
-                        <i class="fas fa-user"></i> Login Here
+                        <i class="fas fa-user-plus"></i> SignUp Here
                     </div>
                     <div class="card-body">
                         <form action="" method="post">
                             <label for="username">Username : </label><br>
                             <input type="text" name="username" id="" class="form-control" required><br>
 
-                            <label for="username">Username : </label><br>
-                            <input type="text" name="username" id="" class="form-control" required><br>
+                            <label for="username">Email : </label><br>
+                            <input type="email" name="email" id="" class="form-control" required><br>
 
                             <label for="pass">Password : </label><br>
                             <input type="password" name="password" id="" class="form-control" required><br>
 
-                            <label for="pass">Password : </label><br>
-                            <input type="password" name="password" id="" class="form-control" required><br>
+                            <label for="pass">Confirm Password : </label><br>
+                            <input type="password" name="cpassword" id="" class="form-control" required><br>
                             
                             <div class="row">
                                 <div class="col-lg-6">
