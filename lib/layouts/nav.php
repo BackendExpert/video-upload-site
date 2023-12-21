@@ -19,7 +19,7 @@
         </li>
       </ul>
       <span class="navbar-text">
-        Navbar text with an inline element
+        <a href=""><button class="btn btn-primary"><i class="fas fa-user-alt"></i> Login</button></a>
       </span>
     </div>
   </div>
