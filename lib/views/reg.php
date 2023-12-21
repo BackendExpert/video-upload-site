@@ -18,14 +18,28 @@
                             <label for="username">Username : </label><br>
                             <input type="text" name="username" id="" class="form-control" required><br>
 
+                            <label for="username">Username : </label><br>
+                            <input type="text" name="username" id="" class="form-control" required><br>
+
                             <label for="pass">Password : </label><br>
                             <input type="password" name="password" id="" class="form-control" required><br>
 
-                            <input type="submit" value="Login" class="btn btn-success" name="login_user" style="width:100%;">
+                            <label for="pass">Password : </label><br>
+                            <input type="password" name="password" id="" class="form-control" required><br>
+                            
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="reset" value="CLear" class="btn btn-senoundary">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="submit" value="SignUp" class="btn btn-success" name="signup_user">
+                                </div>
+                            </div>
+
                         </form>
                         <br>
                         <a href="">forgent Password ?</a><br>
-                        Don't have an Account ? <a href="">SignUp</a>
+                        Already have an Account ? <a href="">SignIn</a>
                     </div>
                 </div>
             </div>
