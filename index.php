@@ -9,6 +9,13 @@
         <div class="row">
             <div class="card">
                 <div class="search-filter">
+                    <?php   
+                        if(isset($_POST['search_vid'])){
+                            $result = search_videos($_POST['search'],$_POST['lenvid'],$_POST['queltyvid']);
+                            echo $result;
+                        }
+                    ?>
+
                     <form action="" method="post">
                         <div class="row">
                             <div class="col-lg-12">
