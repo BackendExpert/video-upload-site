@@ -38,8 +38,7 @@
 
                         </form>
                         <br>
-                        <a href="">forgent Password ?</a><br>
-                        Already have an Account ? <a href="">SignIn</a>
+                        Already have an Account ? <a href="login.php">SignIn</a>
                     </div>
                 </div>
             </div>

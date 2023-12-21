@@ -25,7 +25,7 @@
                         </form>
                         <br>
                         <a href="">forgent Password ?</a><br>
-                        Don't have an Account ? <a href="">SignUp</a>
+                        Don't have an Account ? <a href="reg.php">SignUp</a>
                     </div>
                 </div>
             </div>
