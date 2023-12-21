@@ -19,3 +19,10 @@
 - start the Project
 - develop interfaces
 
+# Developers 
+
+- Jehankandy
+
+# Copyright and license
+
+Copyright 2021–2023 JehanKandy. [video-upload-site](https://github.com/BackendExpert/medical-system) released under the [MIT License](https://github.com/BackendExpert/video-upload-site/blob/master/LICENSE)
