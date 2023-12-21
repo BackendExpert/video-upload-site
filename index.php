@@ -12,7 +12,7 @@
                     <?php   
                         include("lib/function/function.php");
                         if(isset($_POST['search_vid'])){
-                            $result = search_videos($_POST['search'],$_POST['lenvid'],$_POST['queltyvid']);
+                            $result = search_videos($_POST['search'], $_POST['vid_len'], $_POST['vid_qualty']);
                             echo $result;
                         }
                     ?>
@@ -27,7 +27,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <label for="lenvid">Video Length</label>
-                                <select name="vid-len" id="" class="form-control">
+                                <select name="vid_len" id="" class="form-control">
                                     <option value="les10">1 min - 10 min</option>
                                     <option value="10to20">11 min - 20 min</option>
                                     <option value="20up">20 min+</option>
@@ -35,7 +35,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <label for="queltyvid">Video Quality</label>
-                                <select name="vid-qualty" id="" class="form-control">
+                                <select name="vid_qualty" id="" class="form-control">
                                     <option value="360p">360p</option>
                                     <option value="480p">480p</option>
                                     <option value="720p">720p</option>
