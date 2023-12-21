@@ -2,7 +2,7 @@
 
 # About
 
-- This site is Video Uploading site link Youtube
+- This site is Video Uploading site like Youtube
 - use languages 
 - - PHP 
 - - HTML
