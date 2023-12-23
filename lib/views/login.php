@@ -15,13 +15,13 @@
                     </div>
                     <div class="card-body">
                         <?php 
-                            if(isset($_POST[''])){
+                            if(isset($_POST['login_user'])){
                                 $result = sign_in($_POST['username'], $_POST['password']);
                                 echo $result;
                             }
                         
                         ?>
-                        <form action="login_user" method="post">
+                        <form action="" method="post">
                             <label for="username">Username : </label><br>
                             <input type="text" name="username" id="" class="form-control" required><br>
 
