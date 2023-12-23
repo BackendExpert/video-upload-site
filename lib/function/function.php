@@ -59,9 +59,9 @@
         $deactive_user  = "SELECT * FROM user_tbl WHERE username = '$username' && user_pass = '$pass' && is_active = '0' && is_un_access='1'";
         $deactive_result = mysqli_query($con, $deactive_user);
         $deactive_nor = mysqli_num_rows($deactive_result);        
-
-        if($check_login_user_nor > 0){
-            if($deactive_nor == 0){
+       
+        if($deactive_nor == 0){
+            if($check_login_user_nor > 0){
                 if($pass == $check_login_user_row['user_pass']){
                     if(($check_login_user_row['user_type'] == 'user')){
                         setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
