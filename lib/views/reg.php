@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <?php 
                             if(isset($_POST['signup_user'])){
-                                $result = sign_up($_POST['username'],$_POST['email'],$_POST['password'],$_POST['cpassword']);
+                                $result = sign_up($_POST['username'],$_POST['email'],md5($_POST['password']),md5($_POST['cpassword']));
                                 echo $result;
                             }
                         ?>
