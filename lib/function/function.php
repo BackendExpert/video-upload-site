@@ -3,8 +3,49 @@
     session_start();
 
 
-    function reg_user(){
+    function sign_up($username, $email, $pass, $cpass){
         $con = Connection();
+
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email : </strong> invalid Email...!
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+            </div>";
+        }
+        elseif($pass != $cpass){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Password Error : </strong> Password and Confirm Password not match...!
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>";
+        }
+        else{
+            $check_user = "SELECT * FROM user_tbl WHERE email = '$email' || username = '$username'";
+            $check_user_result = mysqli_query($con, $check_user);
+            $check_user_nor = mysqli_num_rows($check_user_result);
+
+            if($check_user_nor > 0){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>User : </strong> already exists...!
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>";
+            }
+
+            else{
+
+                $insert_user = "INSERT INTO user_tbl(username,email,user_pass,user_type,is_active,u_access,join_at,update_at)VALUES('$username','$email','$pass','user',0,0,NOW(),NOW())";
+                $insert_user_result = mysqli_query($con, $insert_user);
+
+                if($insert_user_result){
+                    header("location:../../login.php");
+                }
+                elseif(!$check_user_result){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>ERROR : </strong> 
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>";
+                }
+            }
+        }        
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
