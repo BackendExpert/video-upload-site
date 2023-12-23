@@ -59,7 +59,8 @@
         if($check_login_user_row['is_un_access'] == 1){
             echo "deactive User";
         }
-        if($check_login_user_row['is_active'] == 1){
+        else{
+            if($check_login_user_row['is_active'] == 1){
                 if($pass == $check_login_user_row['user_pass']){
                     if(($check_login_user_row['user_type'] == 'user')){
                         setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
@@ -79,6 +80,7 @@
             else{
                 return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>No recodes found..!</div>&nbsp</center>"; 
             }
+        }
 
         // if($check_login_user_nor > 0){
         //     if($pass == $check_login_user_row['user_pass']){
