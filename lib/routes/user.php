@@ -4,7 +4,7 @@
 <?php 
 
     if(empty($_SESSION['loginSession'])){
-        header("location:../../index.php");
+        header("location:../views/login.php");
     }
 
 ?>
