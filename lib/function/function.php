@@ -36,7 +36,7 @@
                 $insert_user_result = mysqli_query($con, $insert_user);
 
                 if($insert_user_result){
-                    header("location:../../login.php");
+                    header("location:login.php");
                 }
                 elseif(!$check_user_result){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
