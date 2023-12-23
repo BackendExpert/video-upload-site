@@ -75,15 +75,24 @@
                     }
                 }
                 else{
-                    return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>Password is Doesn't Match...!</div>&nbsp</center>"; 
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Password : </strong> Not Match...!
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>";
                 }
             }
             else{
-                return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>User Not Found...!</div>&nbsp</center>"; 
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>User : </strong> Not Found...!
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>";
             }
         }
         else{
-            return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>User Deactive...!</div>&nbsp</center>"; 
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>User Account: </strong> Suspended...!
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>";
         }
 
     }
