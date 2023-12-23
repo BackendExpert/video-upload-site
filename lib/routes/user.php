@@ -148,12 +148,7 @@
                 Users
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="patients.php">
-                <svg class="bi"><use xlink:href="#people"/></svg>
-                Patients
-              </a>
-            </li>
+            
 
           </ul>
 
@@ -162,7 +157,7 @@
           <ul class="nav flex-column mb-auto">
             <li class="nav-item">
                     <a class="nav-link d-flex align-items-center gap-2" href="../views/logout.php" style="color: red;;">
-                        <svg class="bi"><use xlink:href="#door-closed"/></svg>
+                        <i class="fas fa-sign-out-alt"></i>
                         Sign out
                     </a>
             </li>
