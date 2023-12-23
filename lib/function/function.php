@@ -51,9 +51,17 @@
     function sign_in($username, $pass){
         $con = Connection();
 
-        $select = "SELECT * FROM user_tbl WHERE username = '$username'";
-        $select_result = mysqli_query($con, $select);
-        $select_row = mysqli_fetch_assoc($select_result);
+        $check_login_user = "SELECT * FROM user_tbl WHERE username = '$username' && user_pass = '$pass' && is_active == 0 && is_un_access == 0";
+        $check_login_user_result = mysqli_query($con, $check_login_user);
+        $check_login_user_nor = mysqli_num_rows($check_login_user_result);
+        $check_login_user_row = mysqli_fetch_assoc($check_login_user_result);
+
+        if($check_login_user_nor > 0){
+            echo "user OK";
+        }
+        else{
+            echo "user NO";
+        }
 
         
     }
