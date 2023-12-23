@@ -14,7 +14,14 @@
                         <i class="fas fa-user"></i> Login Here
                     </div>
                     <div class="card-body">
-                        <form action="" method="post">
+                        <?php 
+                            if(isset($_POST[''])){
+                                $result = sign_in($_POST['username'], $_POST['password']);
+                                echo $result;
+                            }
+                        
+                        ?>
+                        <form action="login_user" method="post">
                             <label for="username">Username : </label><br>
                             <input type="text" name="username" id="" class="form-control" required><br>
 
