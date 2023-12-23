@@ -51,16 +51,18 @@
     function sign_in($username, $pass){
         $con = Connection();
 
-        $check_login_user = "SELECT * FROM user_tbl WHERE username = '$username' && user_pass = '$pass' && is_active = 1 && is_un_access = 0";
+        $check_login_user = "SELECT * FROM user_tbl WHERE username = '$username' && user_pass = '$pass'";
         $check_login_user_result = mysqli_query($con, $check_login_user);
         $check_login_user_nor = mysqli_num_rows($check_login_user_result);
         $check_login_user_row = mysqli_fetch_assoc($check_login_user_result);
 
-        if($check_login_user_nor > 0){
-            echo "user OK";
+        if($check_login_user_row['is_un_access'] == 0){
+            echo "deactive User";
         }
         else{
-            echo "user NO";
+            if($check_login_user_row['is_active'] == 1){
+                echo "user logedin";
+            }
         }
 
         
