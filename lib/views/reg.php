@@ -14,6 +14,12 @@
                         <i class="fas fa-user-plus"></i> SignUp Here
                     </div>
                     <div class="card-body">
+                        <?php 
+                            if(isset($_POST['signup_user'])){
+                                $result = sign_up($_POST['username'],$_POST['email'],$_POST['password'],$_POST['cpassword']);
+                                echo $result;
+                            }
+                        ?>
                         <form action="" method="post">
                             <label for="username">Username : </label><br>
                             <input type="text" name="username" id="" class="form-control" required><br>
