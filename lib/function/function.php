@@ -56,7 +56,7 @@
         $check_login_user_nor = mysqli_num_rows($check_login_user_result);
         $check_login_user_row = mysqli_fetch_assoc($check_login_user_result);
 
-        if($check_login_user_row['is_un_access'] == 0){
+        if($check_login_user_row['is_un_access'] == 1){
             echo "deactive User";
         }
         else{
