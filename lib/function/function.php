@@ -48,6 +48,14 @@
         }        
     }
 
+    function sign_in($username, $pass){
+        $con = Connection();
+
+        $select = "SELECT * user_tbl WHERE username = '$username'";
+        $select_result = mysqli_query($con, $select);
+        $select_row = mysqli_fetch_assoc($select_result);
+    }
+
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
 
