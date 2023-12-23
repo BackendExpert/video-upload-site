@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <?php 
                             if(isset($_POST['login_user'])){
-                                $result = sign_in($_POST['username'], $_POST['password']);
+                                $result = sign_in($_POST['username'], md5($_POST['password']));
                                 echo $result;
                             }
                         
