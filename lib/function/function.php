@@ -73,6 +73,12 @@
                         header("location:../routes/admin.php");
                     }
                 }
+                else{
+                    return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>Password is Doesn't Match...!</div>&nbsp</center>"; 
+                }
+            }
+            else{
+                return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>No recodes found..!</div>&nbsp</center>"; 
             }
         }
 
