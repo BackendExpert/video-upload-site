@@ -182,47 +182,6 @@
       </h3>
       <hr>
 
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card text-bg-primary mb-3" style="max-width: 100%;">
-                <div class="card-header">Users</div>
-                <div class="card-body">
-                    <h5 class="card-title">All Users</h5>
-                    <p class="card-text"><h3><?php count_users(); ?></h3></p>
-                </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card text-bg-success mb-3" style="max-width: 100%;">
-                    <div class="card-header">Patients</div>
-                    <div class="card-body">
-                        <h5 class="card-title">All Patients</h5>
-                        <p class="card-text"><h3><?php count_patient(); ?></h3></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card text-bg-warning mb-3" style="max-width: 100%;">
-                <div class="card-header">Today's Patients</div>
-                <div class="card-body">
-                    <h5 class="card-title">Today Patients</h5>
-                    <p class="card-text"><h3>20</h3></p>
-                </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card text-bg-danger mb-3" style="max-width: 100%;">
-                    <div class="card-header">Today's Absent Patients</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Today Absent Patients</h5>
-                        <p class="card-text"><h3>5</h3></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
 
     </main>
