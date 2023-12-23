@@ -79,11 +79,11 @@
                 }
             }
             else{
-                return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>User Deactive...!</div>&nbsp</center>"; 
+                return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>User Not Found...!</div>&nbsp</center>"; 
             }
         }
         else{
-            return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>User Not Found</div>&nbsp</center>"; 
+            return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>User Deactive...!</div>&nbsp</center>"; 
         }
 
     }
