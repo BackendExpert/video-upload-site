@@ -51,11 +51,11 @@
     function sign_in($username, $pass){
         $con = Connection();
 
-        $select = "SELECT * user_tbl WHERE username = '$username'";
+        $select = "SELECT * FROM user_tbl WHERE username = '$username'";
         $select_result = mysqli_query($con, $select);
         $select_row = mysqli_fetch_assoc($select_result);
 
-        echo $select_row['email'];
+        
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
