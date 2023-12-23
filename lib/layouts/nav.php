@@ -1,3 +1,7 @@
+<?php 
+  include("../function/function.php");
+?>
+
 <link rel="stylesheet" href="css/style.css">
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div class="container-fluid">
