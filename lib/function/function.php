@@ -54,7 +54,7 @@
         $check_login_user = "SELECT * FROM user_tbl WHERE username = '$username' && user_pass = '$pass'";
         $check_login_user_result = mysqli_query($con, $check_login_user);
         $check_login_user_nor = mysqli_num_rows($check_login_user_result);
-        $check_login_user_row = mysqli_fetch_assoc($check_login_user_result);
+        $check_login_user_row = mysqli_fetch_all($check_login_user_result);
 
         if($check_login_user_row['is_un_access'] == 1){
             echo "deactive User";
@@ -81,29 +81,6 @@
                 return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>No recodes found..!</div>&nbsp</center>"; 
             }
         }
-
-        // if($check_login_user_nor > 0){
-        //     if($pass == $check_login_user_row['user_pass']){
-        //         if(($check_login_user_row['user_type'] == 'user')){
-        //             setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
-        //             $_SESSION['loginSession'] = $check_login_user_row['email'];
-        //             header("location:lib/routes/user.php");
-        //         }
-        //         elseif($check_login_user_row['user_type'] == 'admin'){
-        //             setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
-        //             $_SESSION['loginSession'] = $check_login_user_row['email'];
-        //             header("location:lib/routes/admin.php");
-        //         }
-        //     }
-        //     else{
-        //         return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>Password is Doesn't Match...!</div>&nbsp</center>"; 
-        //     }
-        // }
-        // else{
-        //     return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>No recodes found..!</div>&nbsp</center>"; 
-        // }
-
-        
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
