@@ -153,6 +153,8 @@
         else{
             $my_bio = "bio Updated";
         }
+
+        echo $my_bio;
     }
 
     function update_channel_info(){
@@ -165,13 +167,15 @@
         $select_row = mysqli_fetch_assoc($select_result);
 
         if($select_row['channel_status'] == 0){
-            $my_bio = "
+            $ch_bio = "
                 <a href=''><button class='btn btn-warning'>Update Channel Info</button></a> <p style='color:red;'>Update Your Channel Info</p>            
             ";
         }
         else{
-            $my_bio = "bio Updated";
+            $ch_bio = "bio Updated";
         }
+
+        echo $ch_bio;
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
