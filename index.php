@@ -7,7 +7,7 @@ include("lib/function/function.php");?>
     <div class="container">
         <?php 
             if(isset($_SESSION['loginSession'])){
-                echo "hi";
+                view_name();
             }
         ?>
 

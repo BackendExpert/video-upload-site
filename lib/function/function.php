@@ -101,7 +101,12 @@
         $con = Connection();
 
         $login_email = strval($_SESSION['loginSession']);
-        echo $login_email;
+
+        $select_user = "SELECT * FROM user_tbl WHERE email='$login_email'";
+        $select_result = mysqli_query($con, $select_user);
+        $select_row = mysqli_fetch_assoc($select_result);
+
+        echo $select_row['username'];
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
