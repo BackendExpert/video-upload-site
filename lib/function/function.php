@@ -58,7 +58,8 @@
 
         $deactive_user  = "SELECT * FROM user_tbl WHERE username = '$username' && user_pass = '$pass' && is_active = '0' && is_un_access='1'";
         $deactive_result = mysqli_query($con, $deactive_user);
-        $deactive_nor = mysqli_num_rows($deactive_result);        
+        $deactive_nor = mysqli_num_rows($deactive_result); 
+        $deactive_row = mysqli_fetch_assoc($deactive_result);
        
         if($deactive_nor == 0){
             if($check_login_user_nor > 0){
@@ -89,8 +90,13 @@
             }
         }
         else{
+            $deactive_email = $deactive_row['email'];
+            $view_una_msg = "SELECT * FROM un_access_tbl WHERE email = '$deactive_email'";
+            $view_result = mysqli_query($con, $view_una_msg);
+            $msg_row = mysqli_fetch_assoc($view_result);
+
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>User Account: </strong> Suspended...!
+                            <strong>User Account: Suspended...!</strong>".$msg_row['un_access_msg']." at ".$msg_row['un_access_at']."
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                     </div>";
         }
