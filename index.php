@@ -8,7 +8,7 @@ include("lib/function/function.php");?>
         <?php 
             if(isset($_SESSION['loginSession'])){
         ?>
-        <h2 class="site-title">Welcome to Site, <?php view_name(); ?></h2>
+        <h2 class="site-title">Welcome Back, <?php view_name(); ?></h2>
         <?php
             }else{
         ?>
