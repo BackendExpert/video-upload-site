@@ -1,9 +1,16 @@
 <?php include("lib/layouts/header.php"); ?>
 <link rel="stylesheet" href="css/style.css">
-<?php include("lib/layouts/nav.php"); ?>
+<?php include("lib/layouts/nav.php"); 
+include("lib/function/function.php");?>
 <link rel="stylesheet" href="node_modules/@jehankandy/jkcss/index.css">
 
     <div class="container">
+        <?php 
+            if(isset($_SESSION['loginSession'])){
+                echo "hi";
+            }
+        ?>
+
         <h2 class="site-title">Welcome to Site</h2>
         <hr>
 
@@ -11,7 +18,7 @@
             <div class="card">
                 <div class="search-filter">
                     <?php   
-                        include("lib/function/function.php");
+                        
                         if(isset($_POST['search_vid'])){
                             $result = search_videos($_POST['search'], $_POST['vid_len'], $_POST['vid_qualty']);
                             echo $result;
