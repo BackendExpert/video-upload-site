@@ -24,11 +24,11 @@
         <?php 
           if(isset($_SESSION['loginSession'])){
         ?>
-        <a href="lib/views/login.php" style="text-decoration:none;"><button class="jkbtn jkbtn-blue"><i class="fas fa-user-alt"></i> Login</button></a>
+        <a href="lib/views/logout.php" style="text-decoration:none;"><button class="jkbtn jkbtn-red"><i class="fas fa-sign-out-alt"></i> SignOut</button></a>
         <?php
           }else{
         ?>
-        <a href="lib/views/logout.php" style="text-decoration:none;"><button class="jkbtn jkbtn-red"><i class="fas fa-sign-out-alt"></i> SignOut</button></a>
+        <a href="lib/views/login.php" style="text-decoration:none;"><button class="jkbtn jkbtn-blue"><i class="fas fa-user-alt"></i> Login</button></a>
         <?php
           }
         ?>
