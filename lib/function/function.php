@@ -99,7 +99,9 @@
 
     function view_name(){
         $con = Connection();
-        
+
+        $login_email = strval($_SESSION['loginSession']);
+        echo $login_email;
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
