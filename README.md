@@ -23,6 +23,8 @@
 - developing user admin dashborads
 - functions
 - - admin_access()
+- - update_bio()
+- - update_channel_info()
 
 ## Version 1.0.0-alpha1 21 December 2023
 

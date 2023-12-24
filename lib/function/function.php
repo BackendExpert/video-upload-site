@@ -141,6 +141,10 @@
         $con = Connection();
     }
 
+    function update_channel_info(){
+        $con = Connection();
+    }
+
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
 
