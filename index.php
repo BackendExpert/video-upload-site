@@ -7,11 +7,16 @@ include("lib/function/function.php");?>
     <div class="container">
         <?php 
             if(isset($_SESSION['loginSession'])){
-                view_name();
+        ?>
+        <h2 class="site-title">Welcome to Site, <?php view_name(); ?></h2>
+        <?php
+            }else{
+        ?>
+        <h2 class="site-title">Welcome to Site</h2>
+        <?php        
             }
         ?>
 
-        <h2 class="site-title">Welcome to Site</h2>
         <hr>
 
         <div class="row">
