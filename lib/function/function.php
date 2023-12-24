@@ -164,9 +164,9 @@
         $select_result = mysqli_query($con, $select_is_updated);
         $select_row = mysqli_fetch_assoc($select_result);
 
-        if($select_row['bio_status'] == 0){
+        if($select_row['channel_status'] == 0){
             $my_bio = "
-                <a href=''><button class='btn btn-warning'>Update Bio</button></a> <p style='color:red;'>Update Your Bio</p>            
+                <a href=''><button class='btn btn-warning'>Update Channel Info</button></a> <p style='color:red;'>Update Your Channel Info</p>            
             ";
         }
         else{
