@@ -149,13 +149,8 @@
                 Users
               </a>
             </li>
-            
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#people"/></svg>
-                <?php view_name(); ?>
-              </a>
-            </li>
+            <br><br><br>
+
             
 
           </ul>
@@ -163,6 +158,18 @@
           <hr class="my-3">
 
           <ul class="nav flex-column mb-auto">
+            <li class="nav-item">
+              <p class="nav-link d-flex align-items-center gap-2">
+                <svg class="bi"><use xlink:href="#people"/></svg>
+                Admin : <?php view_name(); ?>
+              </p>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="#" style="color: black;">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Admin : <?php view_name(); ?>
+                    </a>
+            </li>
             <li class="nav-item">
                     <a class="nav-link d-flex align-items-center gap-2" href="../views/logout.php" style="color: red;;">
                         <i class="fas fa-sign-out-alt"></i>
