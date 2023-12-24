@@ -17,7 +17,7 @@
 
 # Releases
 
-## Version 1.0.0 21 December 2023
+## Version 1.0.0 24 December 2023
 
 - develop interfaces
 - developing user admin dashborads
