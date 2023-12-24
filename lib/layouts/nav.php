@@ -1,5 +1,5 @@
 <?php 
-  include("../function/function.php");
+  include("lib/function/function.php");
 ?>
 
 <link rel="stylesheet" href="css/style.css">
