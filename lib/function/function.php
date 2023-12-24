@@ -137,6 +137,10 @@
 
     }
 
+    function update_bio(){
+        $con = Connection();
+    }
+
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
 
