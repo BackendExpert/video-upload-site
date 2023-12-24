@@ -69,7 +69,7 @@
         <?php 
             if(isset($_SESSION['loginSession'])){
         ?>
-            <a href=""><button class="jkbtn jkbtn-blue"><i class="fas fa-plus"></i> Add New Video</button></a>
+            <a href="lib/routes/video/create.php"><button class="jkbtn jkbtn-blue"><i class="fas fa-plus"></i> Add New Video</button></a>
             <hr>
         <?php
             }
