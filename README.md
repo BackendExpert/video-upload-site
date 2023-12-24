@@ -42,7 +42,7 @@
 - this is the function for
 - - if `user_type` = `user` try to access to the admin account the user will automatically suspended.
 
-## update_bio AND update_channel_info
+## update_bio() AND update_channel_info()
 
 - These function for check the user data and user channel data 
 - - if empty
