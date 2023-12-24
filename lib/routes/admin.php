@@ -138,7 +138,7 @@
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
                 <i class="fas fa-tachometer-alt"></i>
-                Admin Dashboard
+                Dashboard
               </a>
             </li>
 
@@ -168,7 +168,7 @@
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
+        <h1 class="h2">Admin Dashboard</h1>
       </div>
 
       <h3>Date : 
