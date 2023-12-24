@@ -1,7 +1,6 @@
 <?php include("lib/layouts/header.php"); ?>
 <link rel="stylesheet" href="css/style.css">
-<?php include("lib/layouts/nav.php"); 
-include("lib/function/function.php");?>
+<?php include("lib/layouts/nav.php");?>
 <link rel="stylesheet" href="node_modules/@jehankandy/jkcss/index.css">
 
     <div class="container">
@@ -66,6 +65,15 @@ include("lib/function/function.php");?>
                 </div>
             </div>
         </div>
+        <br>
+        <?php 
+            if(isset($_SESSION['loginSession'])){
+        ?>
+            <a href=""><button class="jkbtn jkbtn-blue"><i class="fas fa-plus"></i> Add New Video</button></a>
+        <?php
+            }
+        ?>
+
 
 
     </div>
