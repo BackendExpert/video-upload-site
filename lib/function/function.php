@@ -139,10 +139,39 @@
 
     function update_bio(){
         $con = Connection();
+        $login_email = strval($_SESSION['loginSession']);
+
+        $select_is_updated = "SELECT * FROM user_tbl WHERE email = '$login_email'";
+        $select_result = mysqli_query($con, $select_is_updated);
+        $select_row = mysqli_fetch_assoc($select_result);
+
+        if($select_row['bio_status'] == 0){
+            $my_bio = "
+                <a href=''><button class='btn btn-warning'>Update Bio</button></a> <p style='color:red;'>Update Your Bio</p>            
+            ";
+        }
+        else{
+            $my_bio = "bio Updated";
+        }
     }
 
     function update_channel_info(){
         $con = Connection();
+
+        $login_email = strval($_SESSION['loginSession']);
+
+        $select_is_updated = "SELECT * FROM user_tbl WHERE email = '$login_email'";
+        $select_result = mysqli_query($con, $select_is_updated);
+        $select_row = mysqli_fetch_assoc($select_result);
+
+        if($select_row['bio_status'] == 0){
+            $my_bio = "
+                <a href=''><button class='btn btn-warning'>Update Bio</button></a> <p style='color:red;'>Update Your Bio</p>            
+            ";
+        }
+        else{
+            $my_bio = "bio Updated";
+        }
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
