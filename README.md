@@ -35,9 +35,21 @@
 
 ## view_name()
 
+- this function for display the login user's name
 
+## admin_access()
 
+- this is the function for
+- - if `user_type` = `user` try to access to the admin account the user will automatically suspended.
 
+## update_bio AND update_channel_info
+
+- These function for check the user data and user channel data 
+- - if empty
+- - - print Update user data or update channel data
+
+- - if not empty
+- - - display the user data or channel data
 
 # Releases
 
