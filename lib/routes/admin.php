@@ -159,14 +159,7 @@
 
           <ul class="nav flex-column mb-auto">
             <li class="nav-item">
-              <p class="nav-link d-flex align-items-center gap-2">
-                <svg class="bi"><use xlink:href="#people"/></svg>
-                Admin : <?php view_name(); ?>
-              </p>
-            </li>
-            <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-2" href="#" style="color: black;">
-                        <i class="fas fa-sign-out-alt"></i>
+                    <a class="nav-link d-flex align-items-center gap-2" href="#" style="color: black;">                        
                         Admin : <?php view_name(); ?>
                     </a>
             </li>
