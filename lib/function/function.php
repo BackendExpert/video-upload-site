@@ -115,7 +115,15 @@
 
         $check_admin = "SELECT * FROM user_tbl WHERE email = '$login_email'";
         $admin_result = mysqli_query($con, $check_admin);
-        
+        $admin_row = mysqli_fetch_assoc($admin_result);
+
+        if($admin_row['user_type'] != 'admin'){
+            $update_un_access = "UPDATE user_tbl SET is_active='0', is_un_access='1' WHERE email='$login_email'";
+            $update_result = mysqli_fetch_assoc($con, $update_un_access);
+
+            $insert_un_access = "INSERT INTO un_access_tbl(email,un_access_msg,un_access_at)";
+        }
+
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
