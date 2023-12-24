@@ -6,7 +6,7 @@
     if(empty($_SESSION['loginSession'])){
         header("location:../views/login.php");
     }
-
+    admin_access();
 ?>
 
 <link rel="stylesheet" href="../../css/style.css">

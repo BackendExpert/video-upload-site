@@ -121,7 +121,12 @@
             $update_un_access = "UPDATE user_tbl SET is_active='0', is_un_access='1' WHERE email='$login_email'";
             $update_result = mysqli_fetch_assoc($con, $update_un_access);
 
-            $insert_un_access = "INSERT INTO un_access_tbl(email,un_access_msg,un_access_at)";
+            $msg_un_access = "You tried access to the admin account";
+            
+            $insert_un_access = "INSERT INTO un_access_tbl(email,un_access_msg,un_access_at)VALUES('$login_email','$msg_un_access',NOW())";
+            $insert_result = mysqli_query($con, $insert_un_access);
+
+            header("location:../views/logout.php");
         }
 
     }
