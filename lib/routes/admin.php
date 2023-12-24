@@ -138,7 +138,7 @@
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
                 <i class="fas fa-tachometer-alt"></i>
-                Dashboard
+                Admin Dashboard
               </a>
             </li>
 
