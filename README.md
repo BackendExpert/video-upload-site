@@ -25,6 +25,20 @@
 - The user enterd data will be add to `user_tbl` table of the `video_site_db` database
 
 
+## sign_in($username, $pass)
+
+- If user fill the login form and submit by clicking the Login button this fuction will call
+
+- - check the user is active and user is not suspended if user is suspended exit the function and display `User Account: Suspended...!` with the time
+
+- -  if user is not suspended the check the `user_type` is user or admin and login to the dashborad accourding to the `user_type`
+
+## view_name()
+
+
+
+
+
 # Releases
 
 ## Version 1.0.0 24 December 2023
