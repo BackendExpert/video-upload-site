@@ -109,6 +109,10 @@
         echo $select_row['username'];
     }
 
+    function admin_access(){
+        $con = Connection();
+    }
+
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
 
