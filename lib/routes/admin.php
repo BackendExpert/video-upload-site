@@ -177,11 +177,21 @@
         $currentDate = date('l, F j, Y');
         // $currentDate = date("Y-m-d");
         echo $currentDate;
-      ?>
+      ?>     
 
       </h3>
       <hr>
 
+
+      <h2>Infor</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3></h3>
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+      </div>
 
 
     </main>
