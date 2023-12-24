@@ -183,13 +183,12 @@
       <hr>
 
 
-      <h2>Infor</h2>
       <div class="row">
         <div class="col-lg-6">
-          <h3></h3>
+          <h3>Personal Info</h3>
         </div>
         <div class="col-lg-6">
-
+          <h3>Channel Info</h3>
         </div>
       </div>
 
