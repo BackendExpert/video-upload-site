@@ -111,6 +111,11 @@
 
     function admin_access(){
         $con = Connection();
+        $login_email = strval($_SESSION['loginSession']);
+
+        $check_admin = "SELECT * FROM user_tbl WHERE email = '$login_email'";
+        $admin_result = mysqli_query($con, $check_admin);
+        
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
