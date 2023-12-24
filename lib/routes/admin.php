@@ -14,6 +14,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link rel="stylesheet" href="../../css/dashboard.css">
+    <link rel="stylesheet" href="../../css/style.csss">
 
 
     <style>
@@ -187,13 +188,17 @@
         <div class="col-lg-6">
           <h3>Personal Info</h3>
           <div class="card">
+            <div class="bio">
             <?php update_bio(); ?>
+            </div>
           </div>
         </div>
         <div class="col-lg-6">
           <h3>Channel Info</h3>
           <div class="card">
+            <div class="bio">
             <?php update_channel_info(); ?>
+            </div>
           </div>
         </div>
       </div>
