@@ -21,13 +21,18 @@
 
 - develop interfaces
 - developing user admin dashborads
-- 
+- functions
+- - admin_access()
 
 ## Version 1.0.0-alpha1 21 December 2023
 
 - initial releases
 - start the Project
 - develop interfaces
+- functions
+- - sign_up()
+- - sign_in()
+- - view_name()
 
 # Developers 
 
