@@ -96,7 +96,7 @@
             $msg_row = mysqli_fetch_assoc($view_result);
 
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>User Account: Suspended...!</strong>".$msg_row['un_access_msg']." at ".$msg_row['un_access_at']."
+                            <strong>User Account: Suspended...!</strong>".$msg_row['un_access_msg']." at <b></b>".$msg_row['un_access_at']."</b>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                     </div>";
         }
