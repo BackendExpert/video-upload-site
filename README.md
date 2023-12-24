@@ -15,6 +15,16 @@
 - - - the [JKCSS](https://github.com/JKCSS-CSS-Framework/JKCSS-Framework) click to go to repo
 - - - [JKCSS NPM](https://www.npmjs.com/package/@jehankandy/jkcss)
 
+
+# Functions
+
+## sign_up($username, $email, $pass, $cpass)
+
+- If users fill the data in SignUp form and submit by clicking the SignUp button this function will call
+
+- The user enterd data will be add to `user_tbl` table of the `video_site_db` database
+
+
 # Releases
 
 ## Version 1.0.0 24 December 2023
