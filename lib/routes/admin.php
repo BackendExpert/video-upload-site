@@ -208,7 +208,7 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+          <div class="card text-bg-light mb-3" style="max-width: 18rem;">
             <div class="card-header"><i class="fas fa-video"></i> My Likes</div>
             <div class="card-body">
               <h5 class="card-title">All Videos Likes</h5>
@@ -217,7 +217,7 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
             <div class="card-header"><i class="fas fa-video"></i> My Comments</div>
             <div class="card-body">
               <h5 class="card-title">All Comments</h5>
