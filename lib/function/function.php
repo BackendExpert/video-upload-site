@@ -208,13 +208,18 @@
         }
     }
 
-    function bio_add_db($pimg, $temp_img, $fn, $ln, $dob, $address){
+    function bio_add_db($pimg, $temp_img, $pimg_size, $fn, $ln, $dob, $address){
         $con = Connection();
         $target_dir = "images/";
 
         $img_p = basename($pimg);
         $target_path = $target_dir . $img_p;
         $pimg_type = pathinfo($target_path, PATHINFO_EXTENSION);
+
+        $allow_images = array('jpg','png','jpeg','gif');
+        if(in_array($pimg_type, $allow_images)){
+            if()
+        }
 
     }
 
