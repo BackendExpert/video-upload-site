@@ -189,7 +189,7 @@
       </div>
       
       <a href="add_admin.php"><button class="jkbtn jkbtn-green"><i class="fas fa-user-shield"></i> Add Admin User</button></a>
-
+      <br><hr><br>
 
       <div class="row">
         <div class="col-lg-3">
