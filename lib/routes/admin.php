@@ -187,7 +187,7 @@
 
       </h5>
       </div>
-
+      <h3>Channel Stats</h3>
       <div class="row">
         <div class="col-lg-3">
           <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
