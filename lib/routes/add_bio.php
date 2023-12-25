@@ -17,7 +17,7 @@
         <label for="fname">First Name : </label>
         <input type="text" name="fn" id="" class="form-control" placeholder="First Name"><br>
 
-        <label for="lname">First Name : </label>
+        <label for="lname">Last Name : </label>
         <input type="text" name=";n" id="" class="form-control" placeholder="Last Name"><br>
     </form>
 </div>
