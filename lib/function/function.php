@@ -346,10 +346,14 @@
 
     function view_user_bio(){
         $con = Connection();
+
+        $login_email = strval($_SESSION['loginSession']);
     }
 
     function view_ch_data(){
         $con = Connection();
+
+        $login_email = strval($_SESSION['loginSession']);
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
