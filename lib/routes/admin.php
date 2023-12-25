@@ -200,10 +200,10 @@
         </div>
         <div class="col-lg-3">
           <div class="card text-bg-success mb-3" style="max-width: 18rem;">
-            <div class="card-header"><i class="fas fa-video"></i> My Videos</div>
+            <div class="card-header"><i class="fas fa-video"></i> My Subscribers </div>
             <div class="card-body">
-              <h5 class="card-title">Public Videos</h5>
-              <h4>5</h4>
+              <h5 class="card-title">All Subscribers</h5>
+              <h4>1000</h4>
             </div>
           </div>
         </div>
