@@ -47,6 +47,10 @@
 - This function for
 - - the pages that access only `user_type` = `user` 
 
+## go_back()
+
+- This function for go back to dashboard according to `user_type`
+
 ## update_bio() AND update_channel_info()
 
 - These function for check the user data and user channel data 
@@ -68,6 +72,8 @@
 - These functions for
 - - the user add user's bio by `bio_add_db()` to database before, and now that data will display using `view_user_bio()` function
 - - the user add channel data by `bio_add_db()` to database before, and now that data will display using `view_ch_data()` function
+
+
 
 
 # Releases
