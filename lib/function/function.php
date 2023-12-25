@@ -303,7 +303,7 @@
                         $select_result = mysqli_query($con, $select);
                         $select_row = mysqli_fetch_assoc($select_result);
 
-                        $update_data = "UPDATE user_tbl SET bio_status = '1' WHERE email = '$login_email'";
+                        $update_data = "UPDATE user_tbl SET channel_status = '1' WHERE email = '$login_email'";
                         $update_data_result = mysqli_query($con, $update_data);
     
                         if($select_row['user_type'] == 'admin'){
