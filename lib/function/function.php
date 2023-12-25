@@ -178,6 +178,20 @@
         echo $ch_bio;
     }
 
+    function go_back(){
+        $con = Connection();
+        $login_email = strval($_SESSION['loginSession']);
+
+        $check_user = "SELECT * FROM user_tbl WHERE email = '$login_email'";
+        $check_result = mysqli_query($con, $check_user);
+        $check_row = mysqli_fetch_assoc($check_result);
+
+        if($check_row['user_type'] == 'admin'){
+            
+        }
+
+    }
+
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
 
