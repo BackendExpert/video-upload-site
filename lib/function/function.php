@@ -352,6 +352,15 @@
         $select_user_bio = "SELECT * FROM user_bio_tbl WHERE email = '$login_email'";
         $user_bio_result = mysqli_query($con, $select_user_bio);
         $user_bio_row = mysqli_fetch_assoc($user_bio_result);
+
+        $user_pro_img = 'images/'. $user_bio_row['p_img'];
+
+        $user_bio_view = "
+            <h4>User Profile Image : </h4>
+            <img src='".$user_pro_img."'>
+        ";
+
+        echo $user_bio_view;
     }
 
     function view_ch_data(){
