@@ -391,9 +391,9 @@
             <h4>User Profile Image : </h4>
             <img src='".$user_ch_img."' class='profile-imgs'><br><br>
 
-            <p><h4>Username : ". $user_ch_row['ch_name']. "</h4></p></p>
-            <p><h4>First Name : ". $user_ch_row['ch_desc']. "</h4></p></p>
-            <p><h4>Last Name : ". $user_ch_row['add_at']. "</h4></p></p>
+            <p><h4>Channel Name : ". $user_ch_row['ch_name']. "</h4></p></p>
+            <p><h4>Channel Description : ". $user_ch_row['ch_desc']. "</h4></p></p>
+            <p><h4>Created Date : ". $user_ch_row['add_at']. "</h4></p></p>
             <br>
             <hr>
 
