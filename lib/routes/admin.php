@@ -199,7 +199,7 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+          <div class="card text-bg-success mb-3" style="max-width: 18rem;">
             <div class="card-header"><i class="fas fa-video"></i> My Videos</div>
             <div class="card-body">
               <h5 class="card-title">Public Videos</h5>
