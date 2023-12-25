@@ -381,31 +381,26 @@
 
         $login_email = strval($_SESSION['loginSession']);
 
-        $select_user_bio = "SELECT * FROM user_bio_tbl WHERE email = '$login_email'";
-        $user_bio_result = mysqli_query($con, $select_user_bio);
-        $user_bio_row = mysqli_fetch_assoc($user_bio_result);
+        $select_ch_bio = "SELECT * FROM user_ch_tbl WHERE email = '$login_email'";
+        $user_ch_result = mysqli_query($con, $select_ch_bio);
+        $user_ch_row = mysqli_fetch_assoc($user_ch_result);
 
-        $select_data = "SELECT * FROM user_tbl WHERE email = '$login_email'";
-        $select_result = mysqli_query($con, $select_data);
-        $select_row = mysqli_fetch_assoc($select_result);
+        $user_ch_row = 'images/'. $user_ch_row['ch_img'];
 
-        $user_pro_img = 'images/'. $user_bio_row['p_img'];
-
-        $user_bio_view = "
+        $user_ch_view = "
             <h4>User Profile Image : </h4>
             <img src='".$user_pro_img."' class='profile-imgs'><br><br>
 
-            <p><h4>Username : ". $select_row['username']. "</h4></p></p>
-            <p><h4>First Name : ". $user_bio_row['fname']. "</h4></p></p>
-            <p><h4>Last Name : ". $user_bio_row['lname']. "</h4></p></p>
-            <p><h4>Address : ". $user_bio_row['user_address']. "</h4></p></p>
+            <p><h4>Username : ". $user_ch_row['ch_name']. "</h4></p></p>
+            <p><h4>First Name : ". $user_ch_row['ch_desc']. "</h4></p></p>
+            <p><h4>Last Name : ". $user_ch_row['add_at']. "</h4></p></p>
             <br>
             <hr>
 
             <a href=''><button class='jkbtn jkbtn-blue'>Edit Data</button></a>
         ";
 
-        echo $user_bio_view;
+        echo $user_ch_view;
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
