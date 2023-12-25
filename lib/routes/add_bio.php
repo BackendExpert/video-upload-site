@@ -15,7 +15,7 @@
 
     <?php 
         if(isset($_POST['bio_add'])){
-            $result = bio_add_db();
+            $result = bio_add_db($_FILES['p_img']['name'], $_FILES['p_img']['tmp_name'], $_POST['fn'], $_POST['ln'], $_POST['dob'], $_POST['user_address']);
             echo $result;
         }
     ?>
@@ -28,7 +28,7 @@
         <input type="text" name="fn" id="" class="form-control" placeholder="First Name"><br>
 
         <label for="lname">Last Name : </label>
-        <input type="text" name=";n" id="" class="form-control" placeholder="Last Name"><br>
+        <input type="text" name="ln" id="" class="form-control" placeholder="Last Name"><br>
 
         <label for="data_birth">Date of Birth : </label>
         <input type="date" name="dob" id="" class="form-control" min="1950-01-01" max="2020-12-31"><br>
