@@ -13,7 +13,10 @@
     <?php go_back(); ?>
     <hr>
 
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for="fname">Profile Image : </label>
+        <input type="file" name="p_img" id="" class="form-control" accept="image/*"><br>
+
         <label for="fname">First Name : </label>
         <input type="text" name="fn" id="" class="form-control" placeholder="First Name"><br>
 
