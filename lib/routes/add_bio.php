@@ -15,7 +15,7 @@
 
     <?php 
         if(isset($_POST['bio_add'])){
-            $result = bio_add_db($_FILES['p_img']['name'], $_FILES['p_img']['tmp_name'], $_POST['fn'], $_POST['ln'], $_POST['dob'], $_POST['user_address']);
+            $result = bio_add_db($_FILES['p_img']['name'], $_FILES['p_img']['tmp_name'], $_FILES['p_img']['size'], $_POST['fn'], $_POST['ln'], $_POST['dob'], $_POST['user_address']);
             echo $result;
         }
     ?>
