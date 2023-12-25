@@ -9,5 +9,6 @@
 ?>
 
 <div class="container">
+    <br><br>
     <?php go_back(); ?>
 </div>
