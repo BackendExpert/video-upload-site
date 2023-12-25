@@ -211,7 +211,7 @@
     function bio_add_db($pimg, $temp_img, $fn, $ln, $dob, $address){
         $con = Connection();
 
-        
+        $folder = "./images/". $pimg;
 
     }
 
