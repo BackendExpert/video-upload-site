@@ -222,19 +222,33 @@
         if(in_array($pimg_type, $allow_images)){
             if($pimg_size < 10000000){
                 if(move_uploaded_file($temp_img, $target_path)){
-                    $insert_bio = "INSERT INTO user_bio_tbl(email,p_img,fname,lname,dob,user_address,add_at,update_at)VALUES('$login_email','$img_p','$fn','$ln','$dob','$address',NOW(),NOW())";
-                    $insert_result = mysqli_query($con, $insert_bio);
+                    $check_data = "SELECT * FROM user_bio_tbl WHERE email = '$login_email'";
+                    $check_result = mysqli_query($con, $check_data);
+                    $check_nor = mysqli_num_rows($check_result);
 
-                    $select = "SELECT * FROM user_tbl WHERE email = '$login_email'";
-                    $select_result = mysqli_query($con, $select);
-                    $select_row = mysqli_fetch_assoc($select_result);
+                    if($check_nor == 0){
+                        $insert_bio = "INSERT INTO user_bio_tbl(email,p_img,fname,lname,dob,user_address,add_at,update_at)VALUES('$login_email','$img_p','$fn','$ln','$dob','$address',NOW(),NOW())";
+                        $insert_result = mysqli_query($con, $insert_bio);
+    
+                        $select = "SELECT * FROM user_tbl WHERE email = '$login_email'";
+                        $select_result = mysqli_query($con, $select);
+                        $select_row = mysqli_fetch_assoc($select_result);
+    
+                        if($select_row['user_type'] == 'admin'){
+                            header("location:admin.php");
+                        }
+                        else if($select_row['user_type'] == 'user'){
+                            header("location:user.php");
+                        }
+                    }
+                    else{
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                        <strong>Data Already Exists : </strong> User Already added data to databese...!
+                                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                                </div>";
+                    }
 
-                    if($select_row['user_type'] == 'admin'){
-                        header("location:admin.php");
-                    }
-                    else if($select_row['user_type'] == 'user'){
-                        header("location:user.php");
-                    }
+
                 }
                 else{
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
