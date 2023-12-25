@@ -187,7 +187,10 @@
         $check_row = mysqli_fetch_assoc($check_result);
 
         if($check_row['user_type'] == 'admin'){
-            
+            header("../admin.php");
+        }
+        else if($check_row['user_type'] == 'user'){
+            header("../user.php");
         }
 
     }
