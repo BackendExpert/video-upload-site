@@ -51,6 +51,8 @@
 - - if not empty
 - - - display the user data or channel data
 
+## bio_add_db
+
 # Releases
 
 ## Version 1.0.0 24 December 2023
