@@ -385,11 +385,11 @@
         $user_ch_result = mysqli_query($con, $select_ch_bio);
         $user_ch_row = mysqli_fetch_assoc($user_ch_result);
 
-        $user_ch_row = 'images/'. $user_ch_row['ch_img'];
+        $user_ch_img = 'images/'. $user_ch_row['ch_img'];
 
         $user_ch_view = "
             <h4>User Profile Image : </h4>
-            <img src='".$user_pro_img."' class='profile-imgs'><br><br>
+            <img src='".$user_ch_img."' class='profile-imgs'><br><br>
 
             <p><h4>Username : ". $user_ch_row['ch_name']. "</h4></p></p>
             <p><h4>First Name : ". $user_ch_row['ch_desc']. "</h4></p></p>
