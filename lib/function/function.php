@@ -147,7 +147,7 @@
 
         if($select_row['bio_status'] == 0){
             $my_bio = "
-                <a href=''><button class='btn btn-warning'><i class='fas fa-plus'></i> Add Bio</button></a> <p style='color:red;'>Update Your Bio</p>            
+                <a href='add_bio.php'><button class='btn btn-warning'><i class='fas fa-plus'></i> Add Bio</button></a> <p style='color:red;'>Update Your Bio</p>            
             ";
         }
         else{
@@ -168,7 +168,7 @@
 
         if($select_row['channel_status'] == 0){
             $ch_bio = "
-                <a href='add_bio.php'><button class='btn btn-warning'><i class='fas fa-plus'></i> Add Channel Info</button></a> <p style='color:red;'>Update Your Channel Info</p>            
+                <a href=''><button class='btn btn-warning'><i class='fas fa-plus'></i> Add Channel Info</button></a> <p style='color:red;'>Update Your Channel Info</p>            
             ";
         }
         else{
