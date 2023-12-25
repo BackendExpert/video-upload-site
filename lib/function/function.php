@@ -229,7 +229,7 @@
                     $select_result = mysqli_query($con, $select);
                     $select_row = mysqli_fetch_assoc($select_result);
 
-                    if($select_result['user_type'] == 'admin'){
+                    if($select_row['user_type'] == 'admin'){
                         header("location:admin.php");
                     }
                     else if($select_row['user_type'] == 'user'){
