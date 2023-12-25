@@ -19,5 +19,8 @@
 
         <label for="lname">Last Name : </label>
         <input type="text" name=";n" id="" class="form-control" placeholder="Last Name"><br>
+
+        <label for="data_birth">Date of Birth : </label>
+        <input type="date" name="dob" id="" class="form-control"><br>
     </form>
 </div>
