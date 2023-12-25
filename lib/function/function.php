@@ -210,7 +210,7 @@
 
     function bio_add_db($pimg, $temp_img, $pimg_size, $fn, $ln, $dob, $address){
         $con = Connection();
-
+        $login_email = strval($_SESSION['loginSession']);
 
         $target_dir = "images/";
 
@@ -222,9 +222,38 @@
         if(in_array($pimg_type, $allow_images)){
             if($pimg_size < 10000000){
                 if(move_uploaded_file($temp_img, $target_path)){
-                    
+                    $insert_bio = "INSERT INTO user_bio_tbl(email,p_img,fname,lname,dob,user_address,add_at,update_at)VALUES('$login_email','$img_p','$fn','$ln','$dob','$address',NOW(),NOW())";
+                    $insert_result = mysqli_query($con, $insert_bio);
+
+                    $select = "SELECT * FROM user_tbl WHERE email = '$login_email'";
+                    $select_result = mysqli_query($con, $select);
+                    $select_row = mysqli_fetch_assoc($select_result);
+
+                    if($select_result['user_type'] == 'admin'){
+                        header("location:admin.php");
+                    }
+                    else if($select_row['user_type'] == 'user'){
+                        header("location:user.php");
+                    }
                 }
+                else{
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                <strong>ERROR : </strong> While Uploading Data...!
+                                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+                }
+            }else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Image ERROR : </strong> Image File is too large...!
+                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>";
             }
+        }
+        else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Image ERROR : </strong> Image File Not supported...!
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>";
         }
 
     }
