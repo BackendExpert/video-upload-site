@@ -13,6 +13,14 @@
     <?php go_back(); ?>
     <hr>
 
+    <?php 
+        if(isset($_POST['ch_add'])){
+            $result = chdata_add($_FILES['ch_img']['name'], $_FILES['ch_img']['tmp_name'], $_FILES['ch_img']['size'], $_POST['ch_name'], $_POST['ch_desc']);
+            echo $result;
+        }
+    
+    ?>
+
     <form action="" method="post" enctype="multipart/form-data">
         <label for="fname">Channel Profile Image : </label>
         <input type="file" name="ch_img" id="" class="form-control" accept="image/*"><br>
@@ -28,7 +36,7 @@
                 <input type="reset" value="Clear" class="jkbtn jkbtn-gray" style="width:100%;">
             </div>
             <div class="col-lg-6">
-                <input type="submit" value="Add Channel Data" class="jkbtn jkbtn-green" name="chdata_add" style="width:100%;">
+                <input type="submit" value="Add Channel Data" class="jkbtn jkbtn-green" name="ch_add" style="width:100%;">
             </div>
         </div>
     </form>
