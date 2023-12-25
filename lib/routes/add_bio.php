@@ -11,4 +11,5 @@
 <div class="container">
     <br><br>
     <?php go_back(); ?>
+    <hr>
 </div>
