@@ -1,4 +1,10 @@
+<?php 
 
+    if(empty($_SESSION['loginSession'])){
+        header("location:../views/login.php");
+    }
+
+?>
 
 <link rel="stylesheet" href="css/style.css">
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -21,20 +27,8 @@
       </ul>
       <span class="navbar-text">
         <!-- <a href=""><button class="btn btn-primary"><i class="fas fa-user-alt"></i> Login</button></a> -->
-        <?php 
-          include("../function/function.php");
-          if(isset($_SESSION['loginSession'])){
-        ?>
-        <?php view_name(); ?>
-        <a href="lib/views/logout.php" style="text-decoration:none;"><button class="jkbtn jkbtn-red"><i class="fas fa-sign-out-alt"></i> SignOut</button></a>
-        <?php
-          }else{
-        ?>
-        <a href="lib/views/login.php" style="text-decoration:none;"><button class="jkbtn jkbtn-blue"><i class="fas fa-user-alt"></i> Login</button></a>
-        <?php
-          }
-        ?>
 
+        <?php view_name(); ?>
         
       </span>
     </div>
