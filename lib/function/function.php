@@ -343,7 +343,12 @@
         }
     }
 
-    
+
+    function view_user_bio(){
+        $con = Connection();
+    }
+
+    function 
 
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
