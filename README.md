@@ -51,7 +51,7 @@
 - - if not empty
 - - - display the user data or channel data
 
-## bio_add_db
+## bio_add_db AND chdata_add
 
 # Releases
 
