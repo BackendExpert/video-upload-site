@@ -361,9 +361,12 @@
 
         $user_bio_view = "
             <h4>User Profile Image : </h4>
-            <img src='".$user_pro_img."' class='profile-imgs'>
+            <img src='".$user_pro_img."' class='profile-imgs'><br><br>
 
-            <p>Username : ". $select_row['username']. "</p>
+            <p><h4>Username : ". $select_row['username']. "</h4></p></p>
+            <p><h4>First Name : ". $user_bio_row['fname']. "</h4></p></p>
+            <p><h4>Last Name : ". $user_bio_row['lname']. "</h4></p></p>
+            <p><h4>Address : ". $user_bio_row['user_address']. "</h4></p></p>
         ";
 
         echo $user_bio_view;
