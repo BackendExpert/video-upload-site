@@ -60,6 +60,10 @@
 
 # view_user_bio() AND view_ch_data()
 
+- These functions for
+- - the user add user's bio by `bio_add_db()` to database befor, and now that data will display 
+
+
 # Releases
 
 ## Version 1.0.0 24 December 2023
