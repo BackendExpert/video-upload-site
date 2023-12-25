@@ -206,7 +206,10 @@
         else if($check_row['user_type'] == 'user'){
             echo "<a href='user.php'><button class='jkbtn jkbtn-blue'>Back</button></a>";
         }
+    }
 
+    function bio_add_db(){
+        $con = Connection();
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
