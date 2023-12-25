@@ -186,12 +186,49 @@
         ?>     
 
       </h5>
-    
       </div>
 
-      <hr>
-      <h3><i class="fas fa-code"></i> Admin Controls</h3>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-video"></i> My Videos</div>
+            <div class="card-body">
+              <h5 class="card-title">Public Videos</h5>
+              <h4>5</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-video"></i> My Subscribers </div>
+            <div class="card-body">
+              <h5 class="card-title">All Subscribers</h5>
+              <h4>1000</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-bg-info mb-3" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-video"></i> My Likes</div>
+            <div class="card-body">
+              <h5 class="card-title">All Videos Likes</h5>
+              <h4>50000</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-video"></i> Suspended Users</div>
+            <div class="card-body">
+              <h5 class="card-title">All Suspended Users</h5>
+              <h4>15</h4>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <h3><i class="fas fa-code"></i> Admin Controls</h3>
+      <hr>
       <br>
       <h3><i class="fas fa-chart-bar"></i> Channel Stats</h3>
       <br>
