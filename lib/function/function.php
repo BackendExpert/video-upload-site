@@ -218,7 +218,7 @@
 
         $allow_images = array('jpg','png','jpeg','gif');
         if(in_array($pimg_type, $allow_images)){
-            if()
+
         }
 
     }
