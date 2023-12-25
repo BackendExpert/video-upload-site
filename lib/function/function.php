@@ -275,6 +275,10 @@
 
     }
 
+    function chdata_add($ch_img, $ch_temp, $chimg_size, $ch_name, $ch_desc){
+        $con = Connection();
+    }
+
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
 
