@@ -186,8 +186,15 @@
         ?>     
 
       </h5>
+    
       </div>
+
+      <hr>
+      <h3><i class="fas fa-code"></i> Admin Controls</h3>
+
+      <br>
       <h3><i class="fas fa-chart-bar"></i> Channel Stats</h3>
+      <br>
       <div class="row">
         <div class="col-lg-3">
           <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
