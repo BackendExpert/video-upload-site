@@ -71,12 +71,23 @@
 
 - These functions for
 - - the user add user's bio by `bio_add_db()` to database before, and now that data will display using `view_user_bio()` function
-- - the user add channel data by `bio_add_db()` to database before, and now that data will display using `view_ch_data()` function
+- - the user add channel data by `chdata_add()` to database before, and now that data will display using `view_ch_data()` function
 
 
 
 
 # Releases
+
+## Version 1.1.0 25 December 2023
+
+- develop interfaces
+- developing user admin dashborads
+- functions
+- - user_access()
+- - go_back()
+- - view_user_bio()
+- - view_ch_data()
+
 
 ## Version 1.0.0 24 December 2023
 
