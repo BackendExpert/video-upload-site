@@ -137,6 +137,20 @@
 
     }
 
+    function user_access(){
+        $con = Connection();
+        $login_email = strval($_SESSION['loginSession']);
+
+        $check_admin = "SELECT * FROM user_tbl WHERE email = '$login_email'";
+        $admin_result = mysqli_query($con, $check_admin);
+        $admin_row = mysqli_fetch_assoc($admin_result);
+
+        if($admin_row['user_type'] != 'user'){
+            header("location:../views/logout.php");
+        }
+
+    }
+
     function update_bio(){
         $con = Connection();
         $login_email = strval($_SESSION['loginSession']);
