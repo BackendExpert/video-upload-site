@@ -51,7 +51,12 @@
 - - if not empty
 - - - display the user data or channel data
 
-## bio_add_db AND chdata_add
+## bio_add_db() AND chdata_add()
+
+- These functions for
+- - if user add user's bio to database this function `bio_add_db()` call add add user entered data to database
+- - if user add Channel bio to database this function `chdata_add()` call add add user entered data to database
+
 
 # Releases
 
