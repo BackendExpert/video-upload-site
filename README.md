@@ -58,7 +58,7 @@
 - - if user add Channel bio to database this function `chdata_add()` call add add user entered data to database
 
 
-# view_user_bio() AND view_ch_data()
+## view_user_bio() AND view_ch_data()
 
 - These functions for
 - - the user add user's bio by `bio_add_db()` to database befor, and now that data will display using `view_user_bio()` function
