@@ -348,6 +348,10 @@
         $con = Connection();
 
         $login_email = strval($_SESSION['loginSession']);
+
+        $select_user_bio = "SELECT * FROM user_bio_tbl WHERE email = '$login_email'";
+        $user_bio_result = mysqli_query($con, $select_user_bio);
+        $user_bio_row = mysqli_fetch_assoc($user_bio_result);
     }
 
     function view_ch_data(){
