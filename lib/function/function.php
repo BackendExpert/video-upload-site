@@ -165,7 +165,7 @@
             ";
         }
         else{
-            $my_bio = "bio Updated";
+            $my_bio = view_user_bio();
         }
 
         echo $my_bio;
