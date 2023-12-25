@@ -27,7 +27,16 @@
         <input type="date" name="dob" id="" class="form-control" min="1950-01-01" max="2020-12-31"><br>
 
         <label for="address">Address : </label>
-        <textarea name="user_address" cols="30" rows="5" class="form-control" style="resize:none;" placeholder="User Address"></textarea>
+        <textarea name="user_address" cols="30" rows="5" class="form-control" style="resize:none;" placeholder="User Address"></textarea><br>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <input type="reset" value="Clear" class="jkbtn jkbtn-gray" style="width:100%;">
+            </div>
+            <div class="col-lg-6">
+                <input type="submit" value="Add Bio" class="jkbtn jkbtn-green" name="bio_add" style="width:100%;">
+            </div>
+        </div>
 
     </form>
 </div>
