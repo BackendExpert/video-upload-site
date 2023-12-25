@@ -277,6 +277,8 @@
 
     function chdata_add($ch_img, $ch_temp, $chimg_size, $ch_name, $ch_desc){
         $con = Connection();
+
+        echo $ch_img, $ch_temp, $chimg_size, $ch_name, $ch_desc;
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
