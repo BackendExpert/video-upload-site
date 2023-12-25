@@ -13,6 +13,13 @@
     <?php go_back(); ?>
     <hr>
 
+    <?php 
+        if(isset($_POST['bio_add'])){
+            $result = bio_add_db();
+            echo $result;
+        }
+    ?>
+
     <form action="" method="post" enctype="multipart/form-data">
         <label for="fname">Profile Image : </label>
         <input type="file" name="p_img" id="" class="form-control" accept="image/*"><br>
