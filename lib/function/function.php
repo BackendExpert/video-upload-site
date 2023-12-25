@@ -357,7 +357,7 @@
 
         $user_bio_view = "
             <h4>User Profile Image : </h4>
-            <img src='".$user_pro_img."'>
+            <img src='".$user_pro_img."' class='profile-imgs'>
         ";
 
         echo $user_bio_view;
