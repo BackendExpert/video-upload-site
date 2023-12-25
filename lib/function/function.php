@@ -187,10 +187,10 @@
         $check_row = mysqli_fetch_assoc($check_result);
 
         if($check_row['user_type'] == 'admin'){
-            header("../admin.php");
+            echo "<a href='admin.php'><button class='btn btn-primary'>Back</button></a>";
         }
         else if($check_row['user_type'] == 'user'){
-            header("../user.php");
+            echo "<a href='user.php'><button class='btn btn-primary'>Back</button></a>";
         }
 
     }
