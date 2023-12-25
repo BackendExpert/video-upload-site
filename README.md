@@ -58,6 +58,8 @@
 - - if user add Channel bio to database this function `chdata_add()` call add add user entered data to database
 
 
+# view_user_bio() AND view_ch_data()
+
 # Releases
 
 ## Version 1.0.0 24 December 2023
