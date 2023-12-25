@@ -278,7 +278,69 @@
     function chdata_add($ch_img, $ch_temp, $chimg_size, $ch_name, $ch_desc){
         $con = Connection();
 
+        $login_email = strval($_SESSION['loginSession']);
 
+        $target_dir = "images/";
+
+        $img_ch = basename($ch_img);
+        $target_path = $target_dir . $ch_img;
+        $chimg_type = pathinfo($target_path, PATHINFO_EXTENSION);
+
+
+        $allow_images = array('jpg','png','jpeg','gif');
+        if(in_array($chimg_type, $allow_images)){
+            if($chimg_size < 10000000){
+                if(move_uploaded_file($ch_temp, $target_path)){
+                    $check_data = "SELECT * FROM user_bio_tbl WHERE email = '$login_email'";
+                    $check_result = mysqli_query($con, $check_data);
+                    $check_nor = mysqli_num_rows($check_result);
+
+                    if($check_nor == 0){
+                        $insert_bio = "INSERT INTO user_bio_tbl(email,p_img,fname,lname,dob,user_address,add_at,update_at)VALUES('$login_email','$img_p','$fn','$ln','$dob','$address',NOW(),NOW())";
+                        $insert_result = mysqli_query($con, $insert_bio);
+    
+                        $select = "SELECT * FROM user_tbl WHERE email = '$login_email'";
+                        $select_result = mysqli_query($con, $select);
+                        $select_row = mysqli_fetch_assoc($select_result);
+
+                        $update_data = "UPDATE user_tbl SET bio_status = '1' WHERE email = '$login_email'";
+                        $update_data_result = mysqli_query($con, $update_data);
+    
+                        if($select_row['user_type'] == 'admin'){
+                            header("location:admin.php");
+                        }
+                        else if($select_row['user_type'] == 'user'){
+                            header("location:user.php");
+                        }
+                    }
+                    else{
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                        <strong>Data Already Exists : </strong> User Already added data to databese...!
+                                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                                </div>";
+                    }
+
+
+                }
+                else{
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                <strong>ERROR : </strong> While Uploading Data...!
+                                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+                }
+            }else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Image ERROR : </strong> Image File is too large...!
+                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>";
+            }
+        }
+        else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Image ERROR : </strong> Image File Not supported...!
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>";
+        }
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
