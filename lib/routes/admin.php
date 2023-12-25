@@ -209,19 +209,19 @@
         </div>
         <div class="col-lg-3">
           <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header"><i class="fas fa-video"></i> My Videos</div>
+            <div class="card-header"><i class="fas fa-video"></i> My Likes</div>
             <div class="card-body">
-              <h5 class="card-title">Public Videos</h5>
-              <h4>5</h4>
+              <h5 class="card-title">All Videos Likes</h5>
+              <h4>50000</h4>
             </div>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header"><i class="fas fa-video"></i> My Videos</div>
+            <div class="card-header"><i class="fas fa-video"></i> My Comments</div>
             <div class="card-body">
-              <h5 class="card-title">Public Videos</h5>
-              <h4>5</h4>
+              <h5 class="card-title">All Comments</h5>
+              <h4>12000</h4>
             </div>
           </div>
         </div>
