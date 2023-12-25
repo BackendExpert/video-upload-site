@@ -62,7 +62,7 @@
 
 - These functions for
 - - the user add user's bio by `bio_add_db()` to database befor, and now that data will display using `view_user_bio()` function
-- - the user add channel data by `bio_add_db()` to database befor, and now that data will display using `view_user_bio()` function
+- - the user add channel data by `bio_add_db()` to database befor, and now that data will display using `view_ch_data()` function
 
 
 # Releases
