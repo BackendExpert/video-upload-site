@@ -363,7 +363,7 @@
             <h4>User Profile Image : </h4>
             <img src='".$user_pro_img."' class='profile-imgs'>
 
-            <p>Username : </p>
+            <p>Username : ". $select_row['username']. "</p>
         ";
 
         echo $user_bio_view;
