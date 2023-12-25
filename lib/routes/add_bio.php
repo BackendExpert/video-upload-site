@@ -21,6 +21,8 @@
         <input type="text" name=";n" id="" class="form-control" placeholder="Last Name"><br>
 
         <label for="data_birth">Date of Birth : </label>
-        <input type="date" name="dob" id="" class="form-control"><br>
+        <input type="date" name="dob" id="" class="form-control" min="1950-01-01" max="2020-12-31"><br>
+
+
     </form>
 </div>
