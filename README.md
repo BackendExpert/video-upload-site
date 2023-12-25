@@ -42,6 +42,11 @@
 - this is the function for
 - - if `user_type` = `user` try to access to the admin account the user will automatically suspended.
 
+## user_access()
+
+- This function for
+- - the pages that access only `user_type` = `user` 
+
 ## update_bio() AND update_channel_info()
 
 - These function for check the user data and user channel data 
