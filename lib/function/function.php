@@ -186,7 +186,7 @@
             ";
         }
         else{
-            $ch_bio = "bio Updated";
+            $ch_bio = view_ch_data();
         }
 
         echo $ch_bio;
