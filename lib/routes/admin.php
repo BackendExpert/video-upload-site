@@ -190,7 +190,7 @@
       
       <a href="admin/add_admin.php"><button class="jkbtn jkbtn-green"><i class="fas fa-user-shield"></i> Add Admin User</button></a>
       <br><hr><br>
-      <h3><i class="fas fa-code"></i> Admin Controls</h3>
+      <h3><i class="fas fa-code"></i> Admin Controls</h3><br>
       <div class="row">
         <div class="col-lg-3">
           <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
