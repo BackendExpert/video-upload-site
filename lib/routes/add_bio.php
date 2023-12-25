@@ -27,8 +27,8 @@
         <label for="fname">First Name : </label>
         <input type="text" name="fn" id="" class="form-control" placeholder="First Name"><br>
 
-        <label for="lname">Last Name : </label>
-        <input type="text" name="ln" id="" class="form-control" placeholder="Last Name"><br>
+        <label for="fname">Last Name : </label>
+        <input type="text" name="ln" id="" class="form-control" placeholder="First Name"><br>
 
         <label for="data_birth">Date of Birth : </label>
         <input type="date" name="dob" id="" class="form-control" min="1950-01-01" max="2020-12-31"><br>
