@@ -23,7 +23,8 @@
         <label for="data_birth">Date of Birth : </label>
         <input type="date" name="dob" id="" class="form-control" min="1950-01-01" max="2020-12-31"><br>
 
-        
+        <label for="address">Address : </label>
+        <textarea name="user_address" cols="30" rows="5" class="form-control" style="resize:none;" placeholder="User Address"></textarea>
 
     </form>
 </div>
