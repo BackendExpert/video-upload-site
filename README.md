@@ -88,6 +88,8 @@
 - this function for
 - - view data that stored using login_data() in database
 
+## cout_all_users()
+
 # Releases
 
 ## Version 1.2.0 26 December 2023
