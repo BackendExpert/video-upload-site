@@ -16,6 +16,33 @@
 - - - [JKCSS NPM](https://www.npmjs.com/package/@jehankandy/jkcss)
 
 
+# Logins
+
+### admin
+
+- username: jehan
+- password: 123
+
+- username: nimal
+- password: 789
+
+- username: amara
+- password: 741
+
+### users
+
+ - username: kamal
+ - password: 456 
+
+ OR
+
+ - go to signup form and fill it and submit as new user
+
+# IMPORTANT
+
+ - Dont try to access admin.php or pages that can only access by admins because user account will be suspended
+
+
 # Functions
 
 ## sign_up($username, $email, $pass, $cpass)
