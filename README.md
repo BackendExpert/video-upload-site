@@ -88,7 +88,7 @@
 - this function for
 - - view data that stored using login_data() in database
 
-## cout_all_users() , cout_admins() 
+## cout_all_users() , cout_admins() , cout_users()
 
 # Releases
 
