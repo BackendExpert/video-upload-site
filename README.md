@@ -73,10 +73,21 @@
 - - the user add user's bio by `bio_add_db()` to database before, and now that data will display using `view_user_bio()` function
 - - the user add channel data by `chdata_add()` to database before, and now that data will display using `view_ch_data()` function
 
+## new_admin_add()
 
+- this function for
+- - add new Admin user to system so it can do only for any admin users
 
 
 # Releases
+
+## Version 1.2.0 26 December 2023
+
+- develop interfaces
+- developing user admin dashborads
+- functions
+- - new_admin_add()
+
 
 ## Version 1.1.0 25 December 2023
 
