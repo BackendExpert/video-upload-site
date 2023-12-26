@@ -468,8 +468,9 @@
                     <td>".$row['login_at']."</td>
                 </tr>
             ";
-        }
 
+            echo $view_logins;
+        }
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
