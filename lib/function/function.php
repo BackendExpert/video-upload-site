@@ -503,7 +503,7 @@
     function cout_users_suspended(){
         $con = Connection();
 
-        $select_users = "SELECT * FROM user_tbl WHERE user_type = 'user' && is_un_access = '0'";
+        $select_users = "SELECT * FROM user_tbl WHERE user_type = 'user' && is_un_access = '1'";
         $users_result = mysqli_query($con, $select_users);
         $user_sus_nor = mysqli_num_rows($users_result);
         echo $user_sus_nor;
