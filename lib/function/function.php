@@ -459,6 +459,16 @@
         $select_logins = "SELECT * FROM login_data_tbl";
         $logins_result = mysqli_query($con, $select_logins);
 
+        while($row = mysqli_fetch_assoc($logins_result)){
+            $view_logins = "
+                <tr>
+                    <td>".$row['username']."</td>
+                    <td>".$row['email']."</td>
+                    <td>".$row['user_type']."</td>
+                    <td>".$row['login_at']."</td>
+                </tr>
+            ";
+        }
 
     }
 
