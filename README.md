@@ -22,9 +22,13 @@
 
 - username: jehan
 - password: 123
-<hr>
+
+OR
+
 - username: nimal
 - password: 789
+
+OR
 
 - username: amara
 - password: 741
