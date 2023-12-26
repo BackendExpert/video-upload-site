@@ -496,8 +496,8 @@
 
         $select_users = "SELECT * FROM user_tbl WHERE user_type = 'user'";
         $users_result = mysqli_query($con, $select_logins);
-        $admin_nor = mysqli_num_row($users_result);
-        echo $admin_nor;
+        $user_nor = mysqli_num_row($users_result);
+        echo $user_nor;
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
