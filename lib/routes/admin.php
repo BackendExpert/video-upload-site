@@ -189,7 +189,7 @@
       </div>
       
       <a href="admin/add_admin.php"><button class="jkbtn jkbtn-green"><i class="fas fa-plus"></i><i class="fas fa-user-shield"></i> Add Admin User</button></a>
-      <a href="admin/loged_his.php"><button class="jkbtn jkbtn-green"><i class="fas fa-plus"></i><i class="fas fa-user-shield"></i> Add Admin User</button></a>
+      <a href="admin/loged_his.php"><button class="jkbtn jkbtn-blue"><i class="fas fa-user"></i>User Login History</button></a>
       
       <br><hr><br>
       <h3><i class="fas fa-code"></i> Admin Controls</h3><br>
