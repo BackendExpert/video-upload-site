@@ -26,7 +26,7 @@
             </tr>
         </thead>
         <tbody>
-
+            <?php view_login_data(); ?>
         </tbody>
     </table>
 </div>
