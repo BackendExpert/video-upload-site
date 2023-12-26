@@ -90,6 +90,13 @@
 
 ## cout_all_users() , cout_admins() , cout_users() AND cout_users_suspended()
 
+- these functions for
+- - count all users
+- - count admins
+- - count users
+- - count suspended users on the system
+
+
 # Releases
 
 ## Version 1.2.0 26 December 2023
