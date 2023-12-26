@@ -47,6 +47,12 @@ OR
  - Dont try to access admin.php or pages that can only access by admins because user account will be suspended
 
 
+# Accessable Pages
+
+## Admin
+
+## User
+
 # Functions
 
 ## sign_up($username, $email, $pass, $cpass)
