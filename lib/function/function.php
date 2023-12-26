@@ -443,7 +443,8 @@
             $login_username = $select_row['username'];
             $login_roll = $select_row['user_type'];
 
-            $inset_login_data = "INSERT INTO login_data_tbl(username,email,user_type,login_at)VALUES()";
+            $inset_login_data = "INSERT INTO login_data_tbl(username,email,user_type,login_at)VALUES('$login_username','$login_email','$login_roll',NOW())";
+            $login_data_result = mysqli_query($con, $inset_login_data);            
 
         }else{
             return false;
