@@ -12,5 +12,7 @@
 
 <br>
 <div class="container">
-<a href=""><button class="jkbtn jkbtn-blue"></button></a>
+    <a href="../admin.php"><button class="jkbtn jkbtn-blue"> Back</button></a>
+
+    <h2><i class="fas fa-plus"></i><i class="fas fa-user-shield"></i> Add Admin</h2>
 </div>
