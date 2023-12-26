@@ -403,6 +403,10 @@
         echo $user_ch_view;
     }
 
+    function new_admin_add($username, $email, $pass){
+        $con = Connection();
+    }
+
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
 
