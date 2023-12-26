@@ -189,6 +189,8 @@
       </div>
       
       <a href="admin/add_admin.php"><button class="jkbtn jkbtn-green"><i class="fas fa-plus"></i><i class="fas fa-user-shield"></i> Add Admin User</button></a>
+      <a href="admin/add_admin.php"><button class="jkbtn jkbtn-green"><i class="fas fa-plus"></i><i class="fas fa-user-shield"></i> Add Admin User</button></a>
+      
       <br><hr><br>
       <h3><i class="fas fa-code"></i> Admin Controls</h3><br>
       <div class="row">
