@@ -87,6 +87,7 @@
 - developing user admin dashborads
 - functions
 - - new_admin_add()
+- - update sign_in()
 
 
 ## Version 1.1.0 25 December 2023
