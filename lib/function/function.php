@@ -443,7 +443,7 @@
             $login_username = $select_row['username'];
             $login_roll = $select_row['user_type'];
 
-            $inset_login_data;
+            $inset_login_data = "INSERT INTO login_data_tbl(username,email,user_type,login_at)VALUES()";
 
         }else{
             return false;
