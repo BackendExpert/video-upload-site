@@ -226,7 +226,7 @@
             <div class="card-header"><i class="fas fa-video"></i> Suspended Users</div>
             <div class="card-body">
               <h5 class="card-title">All Suspended Users</h5>
-              <h4>15</h4>
+              <h4><?php ?></h4>
             </div>
           </div>
         </div>
