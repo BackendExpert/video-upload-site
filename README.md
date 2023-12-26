@@ -60,6 +60,8 @@ These files are protected by access from users by the `admin_access()` function
 
 ## User
 
+- user.php
+
 ## User and Admin
 
 # Functions
