@@ -443,6 +443,8 @@
             $login_username = $select_row['username'];
             $login_roll = $select_row['user_type'];
 
+            $inset_login_data;
+
         }else{
             return false;
         }
