@@ -78,7 +78,10 @@
 - this function for
 - - add new Admin user to system so it can do only for any admin users
 
+## login_data()
 
+- this function for
+- - store login data and login time in database
 
 # Releases
 
@@ -88,7 +91,7 @@
 - developing user admin dashborads
 - functions
 - - new_admin_add()
-- - update sign_in()
+- - login_data()
 
 
 ## Version 1.1.0 25 December 2023
