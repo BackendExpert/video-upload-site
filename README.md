@@ -56,7 +56,7 @@ OR
 - - admin/add_admin.php
 - - admin/loged_his.php
 
-These files are protected by access from users by the admin_access() function
+These files are protected by access from users by the `admin_access()` function
 
 ## User
 
