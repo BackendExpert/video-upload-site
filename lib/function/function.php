@@ -455,6 +455,13 @@
 
     function view_login_data(){
         $con = Connection();
+        
+        $select_logins = "SELECT * FROM login_data_tbl";
+        $logins_result = mysqli_query($con, $select_logins);
+
+        $view_logins = "
+            <tr></tr>
+        ";
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
