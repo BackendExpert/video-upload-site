@@ -477,8 +477,8 @@
         $con = Connection();
 
         $select_users = "SELECT * FROM user_tbl";
-        $users_result = mysqli_query($con, $select_logins);
-        $users_nor = mysqli_num_row($users_result);
+        $users_result = mysqli_query($con, $select_users);
+        $users_nor = mysqli_num_rows($users_result);
         echo $users_nor;
     }
 
@@ -486,8 +486,8 @@
         $con = Connection();
 
         $select_users = "SELECT * FROM user_tbl WHERE user_type = 'admin'";
-        $users_result = mysqli_query($con, $select_logins);
-        $admin_nor = mysqli_num_row($users_result);
+        $users_result = mysqli_query($con, $select_users);
+        $admin_nor = mysqli_num_rows($users_result);
         echo $admin_nor;
     }
 
@@ -495,8 +495,8 @@
         $con = Connection();
 
         $select_users = "SELECT * FROM user_tbl WHERE user_type = 'user'";
-        $users_result = mysqli_query($con, $select_logins);
-        $user_nor = mysqli_num_row($users_result);
+        $users_result = mysqli_query($con, $select_users);
+        $user_nor = mysqli_num_rows($users_result);
         echo $user_nor;
     }
 
@@ -504,8 +504,8 @@
         $con = Connection();
 
         $select_users = "SELECT * FROM user_tbl WHERE user_type = 'user' && is_un_access = '0'";
-        $users_result = mysqli_query($con, $select_logins);
-        $user_sus_nor = mysqli_num_row($users_result);
+        $users_result = mysqli_query($con, $select_users);
+        $user_sus_nor = mysqli_num_rows($users_result);
         echo $user_sus_nor;
     }
 
