@@ -421,6 +421,12 @@
             $insert_admin = "INSERT INTO user_tbl(username,email,user_pass,user_type,is_active,is_un_access,channel_status,bio_status,join_at,update_at)VALUES('$username','$email','$pass','admin','1','0','0','0',NOW(),NOW())";
             $insert_result = mysqli_query($con, $insert_admin);
         }
+        else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>User : </strong> Already exists...!
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>";
+        }
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
