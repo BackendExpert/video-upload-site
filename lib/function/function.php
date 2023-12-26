@@ -503,10 +503,10 @@
     function cout_users_suspended(){
         $con = Connection();
 
-        $select_users = "SELECT * FROM user_tbl WHERE user_type = 'user' && ";
+        $select_users = "SELECT * FROM user_tbl WHERE user_type = 'user' && is_un_access = '0'";
         $users_result = mysqli_query($con, $select_logins);
-        $user_nor = mysqli_num_row($users_result);
-        echo $user_nor;
+        $user_sus_nor = mysqli_num_row($users_result);
+        echo $user_sus_nor;
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
