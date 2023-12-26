@@ -78,6 +78,10 @@
 - this function for
 - - add new Admin user to system so it can do only for any admin users
 
+## Updated sign_in()
+
+- new update of sign_up function is
+- - when any user login to the system the time and login data store in database 
 
 # Releases
 
