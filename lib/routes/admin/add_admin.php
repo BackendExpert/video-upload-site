@@ -1,5 +1,6 @@
 <?php include("../../layouts/header.php") ?>
 <?php include("../../function/function.php"); ?>
+<?php include("../../layouts/dash_nav.php") ?>
 
 <?php 
 
@@ -8,3 +9,4 @@
     }
     admin_access();
 ?>
+
