@@ -66,7 +66,7 @@ These files are protected by access from users by the `admin_access()` function
 
 - video
 - - video/create.php
-- index.php (after login)
+- index.php (after login) - on root folder
 
 # Functions
 
