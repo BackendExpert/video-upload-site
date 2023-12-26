@@ -19,15 +19,22 @@
 
     <div class="card">
         <div class="bio">
+            <?php 
+                if(isset($_POST['admin_add'])){
+                    $result = new_admin_add($_POST['admin_username'], $_POST['admin_email'], md5($_POST['admi_pass']));
+                    echo $result;
+                }
+            ?>
+
             <form action="" method="post">
                 <label for="Username">Admin Username : </label>
-                <input type="text" name="admin_username" id="" class="form-control" placeholder="Username"><br>
+                <input type="text" name="admin_username" id="" class="form-control" placeholder="Username" required><br>
 
                 <label for="email">Admin Email : </label>
-                <input type="text" name="admin_email" id="" class="form-control" placeholder="Email"><br>
+                <input type="email" name="admin_email" id="" class="form-control" placeholder="Email" required><br>
 
                 <label for="password">Admin Password : </label>
-                <input type="password" name="admi_pass" id="" class="form-control" placeholder="Password"><br>
+                <input type="password" name="admi_pass" id="" class="form-control" placeholder="Password" required><br>
 
                 <div class="row">
                     <div class="col-lg-6">
