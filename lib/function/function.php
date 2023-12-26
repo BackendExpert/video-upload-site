@@ -485,10 +485,10 @@
     function cout_admins(){
         $con = Connection();
 
-        $select_users = "SELECT * FROM user_tbl";
+        $select_users = "SELECT * FROM user_tbl WHERE user_type = 'admin'";
         $users_result = mysqli_query($con, $select_logins);
-        $users_nor = mysqli_num_row($users_result);
-        echo $users_nor;
+        $admin_nor = mysqli_num_row($users_result);
+        echo $admin_nor;
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
