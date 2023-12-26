@@ -23,6 +23,14 @@
         <label for="email">Admin Email : </label>
         <input type="text" name="admin_email" id="" class="form-control"><br>
 
-        
+        <label for="password">Admin Password : </label>
+        <input type="password" name="admi_pass" id="" class="form-control">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <input type="reset" value="Clear" class="jkbtn jkbtn-gray">
+            </div>
+            <div class="col-lg-6"></div>
+        </div>
     </form>
 </div>
