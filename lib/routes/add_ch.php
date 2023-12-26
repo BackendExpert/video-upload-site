@@ -4,7 +4,7 @@
     include("../layouts/dash_nav.php");
 
     if(empty($_SESSION['loginSession'])){
-        header("location:../views/login.php");
+        header("location:../views/logout.php");
     }
 ?>
 
