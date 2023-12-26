@@ -13,5 +13,20 @@
 
 
 <div class="container">
-    
+    <br>
+    <a href="../admin.php"><button class="jkbtn jkbtn-blue">Back</button></a>
+    <hr><br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Username </th>
+                <th>Email </th>
+                <th>User Roll </th>
+                <th>login Time </th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
 </div>
