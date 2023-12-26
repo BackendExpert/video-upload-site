@@ -13,11 +13,5 @@
 
 
 <div class="container">
-    <div class="card">
-        <div class="bio">
-            <form action="" method="post">
-                
-            </form>
-        </div>
-    </div>
+
 </div>
