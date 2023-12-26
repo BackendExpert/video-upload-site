@@ -418,7 +418,7 @@
         $check_admin_nor = mysqli_num_rows($check_result);
 
         if($check_admin_nor == 0){
-            $insert_admin = "INSERT INTO user_tbl()"
+            $insert_admin = "INSERT INTO user_tbl(username,email,user_pass,user_type,is_active,is_un_access,channel_status,bio_status,join_at,update_at)VALUES('$username','$email','$pass','admin','1','0','0','0',NOW(),NOW())";
         }
     }
 
