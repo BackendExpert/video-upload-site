@@ -208,7 +208,7 @@
             <div class="card-header"><i class="fas fa-video"></i> Active Admins </div>
             <div class="card-body">
               <h5 class="card-title">Active Admins</h5>
-              <h4><?php ?></h4>
+              <h4><?php cout_admins(); ?></h4>
             </div>
           </div>
         </div>
