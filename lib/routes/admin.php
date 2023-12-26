@@ -217,7 +217,7 @@
             <div class="card-header"><i class="fas fa-video"></i> Active Users</div>
             <div class="card-body">
               <h5 class="card-title">All Active Users</h5>
-              <h4><?php ?></h4>
+              <h4><?php cout_users(); ?></h4>
             </div>
           </div>
         </div>
