@@ -482,7 +482,7 @@
         echo $users_nor;
     }
 
-    function cout_all_users(){
+    function cout_admins(){
         $con = Connection();
 
         $select_users = "SELECT * FROM user_tbl";
