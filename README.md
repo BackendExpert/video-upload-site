@@ -83,6 +83,11 @@
 - this function for
 - - store login data and login time in database
 
+## view_login_data()
+
+- this function for
+- - view data that stored using login_data() in database
+
 # Releases
 
 ## Version 1.2.0 26 December 2023
@@ -92,6 +97,7 @@
 - functions
 - - new_admin_add()
 - - login_data()
+- - view_login_data()
 
 
 ## Version 1.1.0 25 December 2023
