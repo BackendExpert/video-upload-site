@@ -98,6 +98,10 @@
 - - new_admin_add()
 - - login_data()
 - - view_login_data()
+- - cout_all_users()
+- - cout_admins()
+- - cout_users()
+- - cout_users_suspended()
 
 
 ## Version 1.1.0 25 December 2023
