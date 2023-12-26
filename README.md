@@ -51,6 +51,12 @@ OR
 
 ## Admin
 
+- admin.php
+- admin
+- - admin/add_admin.php
+- - admin/loged_his.php
+
+
 ## User
 
 ## User and Admin
