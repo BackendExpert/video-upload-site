@@ -199,7 +199,7 @@
             <div class="card-header"><i class="fas fa-video"></i> Users and Admins</div>
             <div class="card-body">
               <h5 class="card-title">All User(admin and users)</h5>
-              <h4>120</h4>
+              <h4><?php cout_all_users(); ?></h4>
             </div>
           </div>
         </div>
@@ -208,7 +208,7 @@
             <div class="card-header"><i class="fas fa-video"></i> Active Admins </div>
             <div class="card-body">
               <h5 class="card-title">Active Admins</h5>
-              <h4>20</h4>
+              <h4><?php ?></h4>
             </div>
           </div>
         </div>
