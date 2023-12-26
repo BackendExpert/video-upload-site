@@ -433,6 +433,19 @@
 
     function login_data(){
         $con = Connection();
+        $login_email = strval($_SESSION['loginSession']);
+
+        if(!empty($_SESSION['loginSession'])){
+            $select_user = "SELECT * FROM user_tbl WHERE email = '$login_email'";
+            $select_result = mysqli_query($con, $select_user);
+            $select_row = mysqli_fetch_assoc($select_result);
+
+            $login_username = $select_row['username'];
+            $login_roll = $select_row['user_type'];
+
+        }else{
+            return false;
+        }
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
