@@ -405,6 +405,21 @@
 
     function new_admin_add($username, $email, $pass){
         $con = Connection();
+
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email : </strong> invalid Email...!
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+            </div>";
+        }
+
+        $check_admin = "SELECT * FROM user_tbl WHERE username='$username'";
+        $check_result = mysqli_query($con, $check_admin);
+        $check_admin_nor = mysqli_num_rows($check_result);
+
+        if($check_admin_nor == 0){
+            $insert_admin = "INSERT INTO user_tbl()"
+        }
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
