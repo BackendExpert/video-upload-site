@@ -53,6 +53,8 @@ OR
 
 ## User
 
+## User and Admin
+
 # Functions
 
 ## sign_up($username, $email, $pass, $cpass)
