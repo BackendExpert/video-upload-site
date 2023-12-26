@@ -64,6 +64,10 @@ These files are protected by access from users by the `admin_access()` function
 
 ## User and Admin
 
+- video
+- - video/create.php
+
+
 # Functions
 
 ## sign_up($username, $email, $pass, $cpass)
