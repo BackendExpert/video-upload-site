@@ -56,6 +56,7 @@ OR
 - - admin/add_admin.php
 - - admin/loged_his.php
 
+These files are
 
 ## User
 
