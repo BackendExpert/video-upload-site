@@ -18,7 +18,7 @@
 
     <form action="" method="post">
         <label for="Username">Admin Username : </label>
-        <input type="text" name="admin_username" id="" class="form-control" placeholder="Admin Username"><br>
+        <input type="text" name="admin_username" id="" class="form-control" placeholder="Username"><br>
 
         <label for="email">Admin Email : </label>
         <input type="text" name="admin_email" id="" class="form-control"><br>
