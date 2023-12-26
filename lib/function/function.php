@@ -491,10 +491,10 @@
         echo $admin_nor;
     }
 
-    function cout_admins(){
+    function cout_users(){
         $con = Connection();
 
-        $select_users = "SELECT * FROM user_tbl WHERE user_type = 'admin'";
+        $select_users = "SELECT * FROM user_tbl WHERE user_type = 'user'";
         $users_result = mysqli_query($con, $select_logins);
         $admin_nor = mysqli_num_row($users_result);
         echo $admin_nor;
