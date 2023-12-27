@@ -16,10 +16,10 @@
 
     <form action="" method="post" enctype="multipart/form-data">
         <label for="video">Video : </label>
-        <input type="file" name="video" id=""><br>
+        <input type="file" name="video" id="" class="form-control"><br>
 
         <label for="video">Video Tag : </label>
-        <input type="file" name="video" id=""><br>
+        <input type="text" name="video_tag" id="" class="form-control"><br>
 
         <label for="video">Video Description : </label>
         <input type="file" name="video" id=""><br>
