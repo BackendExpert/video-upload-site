@@ -152,8 +152,8 @@
 
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <i class="fas fa-users"></i>
-                Users
+                <i class="fas fa-chalkboard-teacher"></i>
+                Channels
               </a>
             </li>
             <br><br><br>
