@@ -587,7 +587,7 @@
 
             <div class='col-auto'>
             <div class='card-body'>
-                <video src='upload/".$video_row['video']."' ></video>
+                <video src='videos/".$video_row['video']."' class='vid-small'></video>
                 <div class='title-video'>
 
                     <span class='title'>Video Title : ".$video_row['vid_title']."</span>
