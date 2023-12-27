@@ -156,14 +156,19 @@ These files are protected from users by the `admin_access()` function
 
 - This function will added new video to system and it will store on the database
 
+## public_videos()
+
+- This fuction shows the all public videos uploaded by current login user
+
 # Releases
-## Version 1.3.0 27 December 2023
+## Version 1.3.0-beta1 27 December 2023
 
 - develop interfaces
 - developing user admin dashborads
 - functions
 - - view_my_channel()
 - - add_new_video()
+- - public_videos()
 
 
 ## Version 1.2.0 26 December 2023
