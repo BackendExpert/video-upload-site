@@ -520,6 +520,10 @@
         $check_result = mysqli_query($con, $check_ch);
         $check_row = mysqli_fetch_assoc($check_result);
 
+        $user = "SELECT * FROM user_tbl WHERE email='$login_email'";
+        $result = mysqli_query($con, $user);
+        $user_row = mysqli_fetch_assoc($result);
+
         $ch_img = 'images/'. $check_row['ch_img'];
 
         $my_channel = "
@@ -528,7 +532,7 @@
                     <img src='".$ch_img."'>
                 </div>
                 <div class='col-lg-6'>
-                    
+                    Channel Owner : ".$user_row['username']."
                 </div>
             </div>
         ";
