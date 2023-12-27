@@ -527,18 +527,8 @@
         $ch_img = 'images/'. $check_row['ch_img'];
 
         $my_channel = "
-            <div class='row'>
-                <div class='col-lg-6'>
-                    <img src='".$ch_img."'>
-                </div>
-                <div class='col-lg-6'>
-                    <h2>Channel Owner : ".$user_row['username']."</h2>
-                    <h2>Channel Owner : ".$user_row['username']."</h2>
-                    <h2>Channel Owner : ".$user_row['username']."</h2>
-                    <h2>Channel Owner : ".$user_row['username']."</h2>
-                    <h2>Channel Owner : ".$user_row['username']."</h2>
-                </div>
-            </div>
+            <img src='".$ch_img."'>
+            <h2>Channel Name : ".$check_row['ch_name']."</h2>
         ";
 
         echo $my_channel;
