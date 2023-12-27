@@ -514,6 +514,10 @@
 
     function view_my_channel(){
         $con = Connection();
+        $login_email = strval($_SESSION['loginSession']);
+
+        $check_ch = "SELECT * FROM user_ch_tbl WHERE email = '$login_email'";
+        $check_result = mysqli_query($con, $check_ch);
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
