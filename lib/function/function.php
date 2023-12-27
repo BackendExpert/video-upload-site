@@ -547,7 +547,7 @@
 
         $target_dir = "videos/";
 
-        $added_vid = basename($ch_img);
+        $added_vid = basename($video);
         $target_path = $target_dir . $added_vid;
         $vid_type = pathinfo($target_path, PATHINFO_EXTENSION);
 
