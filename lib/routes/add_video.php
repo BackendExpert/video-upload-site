@@ -28,14 +28,14 @@
         <select name="is_public" class="form-control">Video Public/Private : 
             <option value="1">Public</option>
             <option value="0">Private</option>
-        </select>
+        </select><br>
             
         <div class="row">
             <div class="col-lg-6">
                 <input type="reset" value="Clear" class="jkbtm jkbtn-gray" style="width:100%;">
             </div>
             <div class="col-lg-6">
-                <input type="submit" value="Add Video" name="video_add" class="jkbtn jkbtn-green" style="width:100%;>
+                <input type="submit" value="Add Video" name="video_add" class="jkbtn jkbtn-green" style="width:100%;">
             </div>
         </div>
 
