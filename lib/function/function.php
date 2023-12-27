@@ -512,6 +512,10 @@
         echo $user_sus_nor;
     }
 
+    function view_my_channel(){
+        $con = Connection();
+    }
+
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
 
