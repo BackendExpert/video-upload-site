@@ -22,7 +22,7 @@
         <li><a href="#public_vid">Public Videos</a></li>
         <li><a href="#private_vid">Private Videos</a></li>
     </ul>
-
+    <hr>
     <section id="public_vid">
         <h2>Public Videos</h2><br>
         <div class="row">           
