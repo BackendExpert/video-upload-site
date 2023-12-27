@@ -524,7 +524,7 @@
 
         $my_channel = "
             <div class='row'>
-                <div class='col-lg-6'>
+                <div class='col-lg-4'>
                     <img src='".$ch_img."'>
                 </div>
             </div>
