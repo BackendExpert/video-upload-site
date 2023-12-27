@@ -545,7 +545,7 @@
 
         $login_email = strval($_SESSION['loginSession']);
 
-        $target_dir = "videos/";
+        $target_dir = "../videos/";
 
         $added_vid = basename($video);
         $target_path = $target_dir . $added_vid;
@@ -557,7 +557,7 @@
                 $insert_vid = "INSERT INTO videos_tbl(email,video,vid_title,vid_tag,vid_desc,vid_length,vid_quality,is_public,add_at,update_at)VALUES('$login_email','$added_vid','$vid_title','$vid_tag','$vid_desc','$vid_length','$vid_qu','$vid_status',NOW(),NOW())";
                 $vid_result = mysqli_query($con, $insert_vid);
 
-                header("location:my_channel.php");
+                header("location:../my_channel.php");
             }
             else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
