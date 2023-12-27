@@ -18,11 +18,8 @@
     <?php view_my_channel() ?>
 
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
             <?php public_videos(); ?>
-        </div>
-        <div class="col-lg-6">
-
         </div>
     </div>
 

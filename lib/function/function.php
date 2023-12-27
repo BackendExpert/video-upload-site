@@ -581,21 +581,25 @@
         $select_result = mysqli_query($con, $select_vid);
         
         while($video_row = mysqli_fetch_assoc($select_result)){
-            echo "
+            $video_view = "
                             
-            <div class='col-auto'>
+            <div class='row'>
+                <div class='col-lg-4'>
                 <a href='../routes/video_full_screen.php?id=".$video_row['id']."'>
-                    <div class='card-body'>
-                        <video src='videos/".$video_row['video']."'controls class='vid-small'></video>
-                        <div class='title-video'>
-                            <span class='title'>".$video_row['vid_title']."</span>
-                        </div>                                    
-                    </div>
-                </a>
+                        <div class='card-body'>
+                            <video src='videos/".$video_row['video']."'controls class='vid-small'></video>
+                            <div class='title-video'>
+                                <span class='title'>".$video_row['vid_title']."</span>
+                            </div>                                    
+                        </div>
+                    </a>
+                </div>
             </div>
         
             ";
         }
+
+        echo $video_view;
 
 
     }
