@@ -37,7 +37,7 @@
         <label for="vid_length">Video Length (in min) : </label>
         <input type="text" name="vid_length" id="" class="form-control" placeholder="Video Length"><br>
 
-        <label for="video_q">Video Public/Private: </label>
+        <label for="video_q">Video Quality: </label>
         <select name="vid_qu" class="form-control">Video Public/Private : 
             <option value="360p">360p</option>
             <option value="480p">480p</option>
