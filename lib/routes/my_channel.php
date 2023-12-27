@@ -31,7 +31,7 @@
     </section>
     <hr>
     <section id="private_vid">
-        <h2>Private Videos</h2>   
+        <h2>Private Videos</h2><br> 
         <div class="row">           
             <?php public_videos(); ?>
         </div>
