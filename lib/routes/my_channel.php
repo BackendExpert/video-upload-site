@@ -15,7 +15,7 @@
     <?php go_back(); ?>
     <hr>
     <br>
+    <?php view_my_channel() ?>
 
-    
 
 </div>

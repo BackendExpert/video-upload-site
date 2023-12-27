@@ -520,10 +520,12 @@
         $check_result = mysqli_query($con, $check_ch);
         $check_row = mysqli_fetch_assoc($check_result);
 
+        $ch_img = 'images/'. $check_row['ch_img'];
+
         $my_channel = "
             <div class='row'>
                 <div class='col-lg-6'>
-                    
+                    <img src='".$ch_img."'>
                 </div>
             </div>
         ";
