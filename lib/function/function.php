@@ -581,24 +581,20 @@
         $select_result = mysqli_query($con, $select_vid);
         
         while($video_row = mysqli_fetch_assoc($select_result)){
-            $video_view = "
-                            
+            $video_view = "                          
 
 
-            <div class='col-auto'>
+            <div class='col-auto' style='margin-bottom:20px;'>
             <div class='card-body'>
                 <video src='videos/".$video_row['video']."' class='vid-small'></video>
                 <div class='title-video'>
 
-                    <span class='title'>Video Title : ".$video_row['vid_title']."</span>
+                    <span class='title' >Video Title : ".$video_row['vid_title']."</span>
 
                 </div>
 
             </div>
-        </div>                
-
-
-        
+        </div>   
             ";
 
             echo $video_view;
