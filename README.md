@@ -148,9 +148,6 @@ These files are protected from users by the `admin_access()` function
 - - count users
 - - count suspended users on the system
 
-## Updating update_bio()
-
-## Updating update_channel_info()
 
 
 # Releases
