@@ -24,16 +24,15 @@
     </ul>
 
     <section id="public_vid">
-    <h2>Public Videos</h2><br>
-        <div class="row">        
-            
+        <h2>Public Videos</h2><br>
+        <div class="row">           
             <?php public_videos(); ?>
         </div>
     </section>
     <hr>
     <section id="private_vid">
-        <div class="row">     
-            <h2>Private Videos</h2>   
+        <h2>Private Videos</h2>   
+        <div class="row">           
             <?php public_videos(); ?>
         </div>
     </section>
