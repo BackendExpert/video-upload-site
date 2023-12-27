@@ -554,7 +554,7 @@
         $allowed_types = array('mp4','MOV');
         if(in_array($vid_type, $allowed_types)){
             if(move_uploaded_file($ch_temp, $target_path)){
-                $insert_vid = "INSERT INTO video_tbl()VALUES()";
+                $insert_vid = "INSERT INTO videos_tbl(email,video,vid_title,vid_tag,vid_desc,vid_length,vid_quality,is_public,add_at,update_at)VALUES()";
             }
         }
     }
