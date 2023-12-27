@@ -29,6 +29,7 @@
             <?php public_videos(); ?>
         </div>
     </section>
+    <hr>
     <section id="private_vid">
         <div class="row">     
             <h2>Private Videos</h2>   
