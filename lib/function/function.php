@@ -550,6 +550,13 @@
         $added_vid = basename($ch_img);
         $target_path = $target_dir . $added_vid;
         $vid_type = pathinfo($target_path, PATHINFO_EXTENSION);
+
+        $allowed_types = array('mp4','MOV');
+        if(in_array($vid_type, $allowed_types)){
+            if(move_uploaded_file($ch_temp, $target_path)){
+                
+            }
+        }
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
