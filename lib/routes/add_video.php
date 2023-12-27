@@ -9,3 +9,11 @@
 ?>
 
 
+<div class="container">
+    <h2>Add New Video</h2>
+    <hr>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        
+    </form>
+</div>
