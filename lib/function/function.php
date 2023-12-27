@@ -532,7 +532,7 @@
                     <img src='".$ch_img."'>
                 </div>
                 <div class='col-lg-6'>
-                    Channel Owner : ".$user_row['username']."
+                    <h2>Channel Owner : ".$user_row['username']."</h2>
                 </div>
             </div>
         ";
