@@ -543,7 +543,13 @@
     function add_new_video($video, $video_temp, $vid_title, $vid_tag, $vid_desc, $vid_status){
         $con = Connection();
 
-        
+        $login_email = strval($_SESSION['loginSession']);
+
+        $target_dir = "videos/";
+
+        $added_vid = basename($ch_img);
+        $target_path = $target_dir . $added_vid;
+        $vid_type = pathinfo($target_path, PATHINFO_EXTENSION);
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
