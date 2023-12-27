@@ -25,11 +25,13 @@
 
     <section id="public_vid">
         <div class="row">        
+            <h2>Public Videos</h2>
             <?php public_videos(); ?>
         </div>
     </section>
     <section id="private_vid">
-        <div class="row">        
+        <div class="row">     
+            <h2>Private Videos</h2>   
             <?php public_videos(); ?>
         </div>
     </section>
