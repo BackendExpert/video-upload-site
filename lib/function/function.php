@@ -580,6 +580,23 @@
         $select_vid = "SELECT * FROM videos_tbl WHERE email = '$login_email' && is_public = '1'";
         $select_result = mysqli_query($con, $select_vid);
         
+        while($video_row = mysqli_fetch_assoc($select_result)){
+            echo "
+                            
+            <div class='col-auto'>
+            <a href='../routes/video_full_screen.php?id=".$video_row['id']."'>
+                <div class='card-body'>
+                    <video src='videos/".$video_row['video_url']."'controls></video>
+                    <div class='title-video'>
+                        <span class='title'>".$video_row['video_title']."</span>
+                    </div>                                    
+                </div>
+            </a>
+        </div>
+        
+            ";
+        }
+
 
     }
 
