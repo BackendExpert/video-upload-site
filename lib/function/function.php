@@ -533,7 +533,7 @@
             <h4>Channel Subscribers : </h4>
 
             <h2>Videos : </h2>
-            <a href=''><button class='jkbtn jkbtn-blue'><i class='fas fa-plus'></i>Add New Videos</button></a>
+            <a href=''><button class='jkbtn jkbtn-blue'><i class='fas fa-plus'></i> Add New Videos</button></a>
 
         ";
 
