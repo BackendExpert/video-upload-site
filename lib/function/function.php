@@ -584,7 +584,7 @@
             $video_view = "
                             
 
-                <div class='col-lg-3'>
+                <div class='row'>
                 <a href='../routes/video_full_screen.php?id=".$video_row['id']."'>
                         <div class='card-body'>
                             <video src='videos/".$video_row['video']."'controls class='vid-small'></video>
