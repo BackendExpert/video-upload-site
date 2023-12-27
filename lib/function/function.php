@@ -583,7 +583,7 @@
         while($video_row = mysqli_fetch_assoc($select_result)){
             $video_view = "
                             
-            <div class='row'>
+
                 <div class='col-lg-3'>
                 <a href='../routes/video_full_screen.php?id=".$video_row['id']."'>
                         <div class='card-body'>
@@ -594,7 +594,7 @@
                         </div>
                     </a>
                 </div>
-            </div>
+
         
             ";
 
