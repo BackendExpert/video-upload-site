@@ -14,6 +14,11 @@
     <h2>Add New Video</h2>
     <hr>
 
+    <?php 
+        
+    
+    ?>
+
     <form action="" method="post" enctype="multipart/form-data">
         <label for="video">Video : </label>
         <input type="file" name="video" id="" class="form-control"><br>
