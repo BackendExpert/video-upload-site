@@ -15,6 +15,17 @@
     <hr>
 
     <form action="" method="post" enctype="multipart/form-data">
+        <label for="video">Video : </label>
+        <input type="file" name="video" id=""><br>
+
+        <label for="video">Video Tag : </label>
+        <input type="file" name="video" id=""><br>
+
+        <label for="video">Video Description : </label>
+        <input type="file" name="video" id=""><br>
+
+        <label for="video">Video Public/Private: </label>
+        <input type="file" name="video" id=""><br>
         
     </form>
 </div>
