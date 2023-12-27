@@ -540,7 +540,7 @@
         echo $my_channel;
     }
 
-    function add_new_video(){
+    function add_new_video($video, $video_temp, $vid_title, $vid_tag, $vid_desc, $vid_status){
         $con = Connection();
     }
 
