@@ -533,6 +533,10 @@
                 </div>
                 <div class='col-lg-6'>
                     <h2>Channel Owner : ".$user_row['username']."</h2>
+                    <h2>Channel Owner : ".$user_row['username']."</h2>
+                    <h2>Channel Owner : ".$user_row['username']."</h2>
+                    <h2>Channel Owner : ".$user_row['username']."</h2>
+                    <h2>Channel Owner : ".$user_row['username']."</h2>
                 </div>
             </div>
         ";
