@@ -576,6 +576,9 @@
     function public_videos(){
         $con = Connection();
         $login_email = strval($_SESSION['loginSession']);
+
+        $select_vid = "SELECT * FROM videos_tbl WHERE email = '$login_email' && is_public = '1'";
+        $select_result = mysqli_query($con, $select_vid);
         
 
     }
