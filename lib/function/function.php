@@ -527,6 +527,14 @@
                 <div class='col-lg-4'>
                     <img src='".$ch_img."'>
                 </div>
+                <div class='col-lg-8'>
+                    <div class='row'>
+                        <div class='col-lg-6'>
+                        </div>
+                        <div class='col-lg-6'>
+                        </div>
+                    </div>
+                </div>
             </div>
         ";
 
