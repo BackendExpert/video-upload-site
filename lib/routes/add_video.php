@@ -18,6 +18,9 @@
         <label for="video">Video : </label>
         <input type="file" name="video" id="" class="form-control"><br>
 
+        <label for="video">Video Title : </label>
+        <input type="text" name="video_title" id="" class="form-control" placeholder="Video Title"><br>
+
         <label for="video">Video Tag : </label>
         <input type="text" name="video_tag" id="" class="form-control" placeholder="Video Tag"><br>
 
