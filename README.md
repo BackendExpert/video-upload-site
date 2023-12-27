@@ -151,6 +151,13 @@ These files are protected from users by the `admin_access()` function
 
 
 # Releases
+## Version 1.3.0 27 December 2023
+
+- develop interfaces
+- developing user admin dashborads
+- functions
+- - 
+
 
 ## Version 1.2.0 26 December 2023
 
