@@ -573,6 +573,13 @@
         }
     }
 
+    function public_videos(){
+        $con = Connection();
+        $login_email = strval($_SESSION['loginSession']);
+        
+
+    }
+
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
 
