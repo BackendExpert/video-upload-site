@@ -24,7 +24,7 @@
 
     <form action="" method="post" enctype="multipart/form-data">
         <label for="video">Video : </label>
-        <input type="file" name="video" id="" class="form-control"><br>
+        <input type="file" name="video" id="" class="form-control" accept="video/*"><br>
 
         <label for="video">Video Title : </label>
         <input type="text" name="video_title" id="" class="form-control" placeholder="Video Title"><br>
