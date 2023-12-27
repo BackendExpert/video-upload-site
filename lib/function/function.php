@@ -554,8 +554,22 @@
         $allowed_types = array('mp4','MOV');
         if(in_array($vid_type, $allowed_types)){
             if(move_uploaded_file($ch_temp, $target_path)){
-                $insert_vid = "INSERT INTO videos_tbl(email,video,vid_title,vid_tag,vid_desc,vid_length,vid_quality,is_public,add_at,update_at)VALUES()";
+                $insert_vid = "INSERT INTO videos_tbl(email,video,vid_title,vid_tag,vid_desc,vid_length,vid_quality,is_public,add_at,update_at)VALUES('$login_email','$added_vid','$vid_title','$vid_tag','$vid_desc','$vid_length','$vid_qu','$vid_status',NOW(),NOW())";
+                $vid_result = mysqli_query($con, $insert_vid);
+
+                header("location:my_channel.php");
             }
+            else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>ERROR : </strong> While Uploading Data...!
+                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>";
+            }
+        }else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>ERROR : </strong> This Type not valied...!
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>";
         }
     }
 
