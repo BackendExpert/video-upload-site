@@ -530,7 +530,10 @@
             <img src='".$ch_img."'><br><br>
             <h4>Channel Name : ".$check_row['ch_name']."</h4>
             <hr>
-            <h2>Channel Subscribers : </h2>
+            <h4>Channel Subscribers : </h4>
+
+            <h2>Videos : </h2>
+
         ";
 
         echo $my_channel;
