@@ -542,6 +542,8 @@
 
     function add_new_video($video, $video_temp, $vid_title, $vid_tag, $vid_desc, $vid_status){
         $con = Connection();
+
+        echo $video, $video_temp, $vid_title, $vid_tag, $vid_desc, $vid_status;
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
