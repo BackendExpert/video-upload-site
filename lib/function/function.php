@@ -586,9 +586,9 @@
             <div class='col-auto'>
             <a href='../routes/video_full_screen.php?id=".$video_row['id']."'>
                 <div class='card-body'>
-                    <video src='videos/".$video_row['video']."'controls></video>
+                    <video src='videos/".$video_row['video']."'controls class='vid-small'></video>
                     <div class='title-video'>
-                        <span class='title'>".$video_row['video_title']."</span>
+                        <span class='title'>".$video_row['vid_title']."</span>
                     </div>                                    
                 </div>
             </a>
