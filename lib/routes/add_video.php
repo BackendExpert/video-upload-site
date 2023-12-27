@@ -16,26 +16,25 @@
 
     <?php 
         if(isset($_POST['video_add'])){
-            $result = add_new_video($_FILES['video']['name'], $_FILES['video']['tmp_name'],);
+            $result = add_new_video($_FILES['video']['name'], $_FILES['video']['tmp_name'], $_POST['video_title'], $_POST['video_tag'], $_POST['video_desc'], $_POST['is_public']);
             echo $result;
-        }
-    
+        }    
     ?>
 
     <form action="" method="post" enctype="multipart/form-data">
         <label for="video">Video : </label>
         <input type="file" name="video" id="" class="form-control" accept="video/*"><br>
 
-        <label for="video">Video Title : </label>
+        <label for="video_title">Video Title : </label>
         <input type="text" name="video_title" id="" class="form-control" placeholder="Video Title"><br>
 
-        <label for="video">Video Tag : </label>
+        <label for="video_tag">Video Tag : </label>
         <input type="text" name="video_tag" id="" class="form-control" placeholder="Video Tag"><br>
 
-        <label for="video">Video Description : </label>
+        <label for="video_desc">Video Description : </label>
         <textarea name="video_desc" cols="30" rows="5" class="form-control" style="resize:none;" placeholder="Video Description"></textarea><br>
 
-        <label for="video">Video Public/Private: </label>
+        <label for="video_type">Video Public/Private: </label>
         <select name="is_public" class="form-control">Video Public/Private : 
             <option value="1">Public</option>
             <option value="0">Private</option>
