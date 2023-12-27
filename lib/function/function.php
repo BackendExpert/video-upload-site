@@ -520,7 +520,13 @@
         $check_result = mysqli_query($con, $check_ch);
         $check_row = mysqli_fetch_assoc($check_result);
 
-        $my_channel = "";
+        $my_channel = "
+            <div class='row'>
+                <div class='col-lg-6'>
+                
+                </div>
+            </div>
+        ";
 
         echo $my_channel;
     }
