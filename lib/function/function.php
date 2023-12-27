@@ -518,6 +518,11 @@
 
         $check_ch = "SELECT * FROM user_ch_tbl WHERE email = '$login_email'";
         $check_result = mysqli_query($con, $check_ch);
+        $check_row = mysqli_fetch_assoc($check_result);
+
+        $my_channel = "";
+
+        echo $my_channel;
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
