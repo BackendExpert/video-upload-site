@@ -25,7 +25,7 @@
 
     <section id="public_vid">
         <div class="row">        
-            <h2>Public Videos</h2>
+            <h2>Public Videos</h2><br>
             <?php public_videos(); ?>
         </div>
     </section>
