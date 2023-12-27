@@ -160,7 +160,7 @@
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2" href="#">
                 <i class="fas fa-video"></i>
-                Channels
+                Videos
               </a>
             </li>
             <br>
