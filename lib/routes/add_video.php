@@ -34,6 +34,17 @@
         <label for="video_desc">Video Description : </label>
         <textarea name="video_desc" cols="30" rows="5" class="form-control" style="resize:none;" placeholder="Video Description"></textarea><br>
 
+        <label for="video_tag">Video Length (in min) : </label>
+        <input type="text" name="vid_length" id="" class="form-control" placeholder="Video Length"><br>
+
+        <label for="video_type">Video Public/Private: </label>
+        <select name="is_public" class="form-control">Video Public/Private : 
+            <option value="360p">360p</option>
+            <option value="480p">480p</option>
+            <option value="720p">720p</option>
+            <option value="1080p">1080p</option>
+        </select><br>
+
         <label for="video_type">Video Public/Private: </label>
         <select name="is_public" class="form-control">Video Public/Private : 
             <option value="1">Public</option>
