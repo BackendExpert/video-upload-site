@@ -152,6 +152,9 @@ These files are protected from users by the `admin_access()` function
 
 - This function will display the all videos that user added to the system (Public and Private)
 
+## add_new_video()
+
+- This function will added new video to system and it will store on the database
 
 # Releases
 ## Version 1.3.0 27 December 2023
