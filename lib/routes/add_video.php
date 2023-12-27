@@ -32,7 +32,7 @@
             
         <div class="row">
             <div class="col-lg-6">
-                <input type="reset" value="Clear" class="jkbtm jkbtn-gray" style="width:100%;">
+                <input type="reset" value="Clear" class="jkbtn jkbtn-gray" style="width:100%;">
             </div>
             <div class="col-lg-6">
                 <input type="submit" value="Add Video" name="video_add" class="jkbtn jkbtn-green" style="width:100%;">
