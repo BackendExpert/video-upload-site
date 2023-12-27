@@ -523,7 +523,14 @@
         $ch_img = 'images/'. $check_row['ch_img'];
 
         $my_channel = "
-            
+            <div class='row'>
+                <div class='col-lg-6'>
+                    <img src='".$ch_img."'>
+                </div>
+                <div class='col-lg-6'>
+                    
+                </div>
+            </div>
         ";
 
         echo $my_channel;
