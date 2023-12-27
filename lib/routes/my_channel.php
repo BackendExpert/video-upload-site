@@ -18,7 +18,9 @@
     <?php view_my_channel() ?>
 
 
+    <div class="row">
     <?php public_videos(); ?>
+    </div>
 
 
 </div>

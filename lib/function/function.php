@@ -584,18 +584,19 @@
             $video_view = "
                             
 
-                <div class='row'>
-                    <div class='col-auto'>
-                        <a href='../routes/video_full_screen.php?id=".$video_row['id']."'>
-                            <div class='card-body'>
-                                <video src='videos/".$video_row['video']."'controls class='vid-small'></video>
-                                <div class='title-video'>
-                                    <span class='title'>".$video_row['vid_title']."</span>
-                                </div>                                    
-                            </div>
-                        </a>
-                    </div>                    
+
+            <div class='col-auto'>
+            <div class='card-body'>
+                <video src='upload/".$video_row['video']."' ></video>
+                <div class='title-video'>
+
+                    <span class='title'>Video Title : ".$video_row['vid_title']."</span>
+
                 </div>
+
+            </div>
+        </div>                
+
 
         
             ";
