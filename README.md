@@ -160,6 +160,7 @@ These files are protected from users by the `admin_access()` function
 - developing user admin dashborads
 - functions
 - - view_my_channel()
+- - add_new_video()
 
 
 ## Version 1.2.0 26 December 2023
