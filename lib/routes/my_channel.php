@@ -17,10 +17,24 @@
     <br>
     <?php view_my_channel() ?>
 
+    <br><br>
+    <ul>
+        <li><a href="#public_vid">Public Videos</a></li>
+        <li><a href="#private_vid">Private Videos</a></li>
+    </ul>
 
-    <div class="row">
-    <?php public_videos(); ?>
-    </div>
+    <section id="public_vid">
+        <div class="row">        
+            <?php public_videos(); ?>
+        </div>
+    </section>
+    <section id="private_vid">
+        <div class="row">        
+            <?php public_videos(); ?>
+        </div>
+    </section>
+    
+    
 
 
 </div>
