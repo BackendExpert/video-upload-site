@@ -19,10 +19,10 @@
         <input type="file" name="video" id="" class="form-control"><br>
 
         <label for="video">Video Tag : </label>
-        <input type="text" name="video_tag" id="" class="form-control"><br>
+        <input type="text" name="video_tag" id="" class="form-control" placeholder="Video Tag"><br>
 
         <label for="video">Video Description : </label>
-        <input type="file" name="video" id=""><br>
+        <textarea name="video_desc" cols="30" rows="5" class="form-control" style="resize:none;" placeholder="Video Description"></textarea>
 
         <label for="video">Video Public/Private: </label>
         <input type="file" name="video" id=""><br>
