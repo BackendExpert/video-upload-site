@@ -145,7 +145,7 @@
 
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#people"/></svg>
+                <i class="fas fa-users"></i>
                 Users
               </a>
             </li>
