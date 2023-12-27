@@ -401,7 +401,7 @@
             <hr>
 
             <a href=''><button class='jkbtn jkbtn-blue'>Edit Data</button></a>
-            <a href=''><button class='jkbtn jkbtn-blue'>View Channel</button></a>
+            <a href=''><button class='jkbtn jkbtn-green'>View Channel</button></a>
             
         ";
 
