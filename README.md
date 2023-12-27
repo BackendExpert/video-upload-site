@@ -156,7 +156,7 @@ These files are protected from users by the `admin_access()` function
 - develop interfaces
 - developing user admin dashborads
 - functions
-- - 
+- - view_my_channel
 
 
 ## Version 1.2.0 26 December 2023
