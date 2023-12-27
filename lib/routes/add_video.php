@@ -15,7 +15,7 @@
     <hr>
 
     <?php 
-        if(isset($_POST[''])){
+        if(isset($_POST['video_add'])){
             $result = add_new_video();
             echo $result;
         }
