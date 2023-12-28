@@ -162,7 +162,7 @@ These files are protected from users by the `admin_access()` function
 
 ## private_videos()
 
-- This fuction shows the all public videos uploaded by current login user
+- This fuction shows the all private videos uploaded by current login user
 
 
 # Releases
