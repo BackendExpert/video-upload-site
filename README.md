@@ -161,6 +161,14 @@ These files are protected from users by the `admin_access()` function
 - This fuction shows the all public videos uploaded by current login user
 
 # Releases
+
+## Version 1.3.0-beta1 27 December 2023
+
+- develop interfaces
+- developing user admin dashborads
+- functions
+- - updating -> public_videos()
+
 ## Version 1.3.0-beta1 27 December 2023
 
 - develop interfaces
