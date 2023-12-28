@@ -598,10 +598,10 @@
 
             echo $video_view;
         }
+    }
 
-        
-
-
+    function private_videos(){
+        $con = Connection();
     }
 
     function search_videos($video, $vid_len, $vid_qulty){
