@@ -614,7 +614,7 @@
 
 
             <div class='col-auto' style='margin-bottom:20px;'>
-                <a href=''>
+                <a href='video_info.php?id=".$video_row['id']."'>
                     <div class='card-body'>
                         <video src='videos/".$video_row['video']."' class='vid-small'></video>
                         <div class='title-video'>
