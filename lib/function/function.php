@@ -637,10 +637,11 @@
         $video_row = mysqli_fetch_assoc($check_result);
         $video_nor = mysqli_num_rows($check_result);
 
-        if()
+        if($video_nor != 0){
+            $video_les_10 = "SELECT * FROM videos_tbl";
+        }
 
-        $video_view = "
-        ";
+
 
         echo $video_view;
     }
