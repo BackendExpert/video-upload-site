@@ -166,7 +166,8 @@ These files are protected from users by the `admin_access()` function
 
 ## view_videos()
 
-- This function for
+- This function when user search any video on search box if there are videos in database according to the search video will be display
+- if not display "There are no videos"
 
 ## all_vides()
 
