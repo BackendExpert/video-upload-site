@@ -540,7 +540,7 @@
         echo $my_channel;
     }
 
-    function add_new_video($video, $video_temp, $vid_title, $vid_tag, $vid_desc, $vid_length, $vid_qu, $vid_status){
+    function add_new_video($video, $video_temp, $vid_title, $vid_tag, $vid_desc, $vid_status){
         $con = Connection();
 
         $login_email = strval($_SESSION['loginSession']);
@@ -554,7 +554,7 @@
         $allowed_types = array('mp4','MOV');
         if(in_array($vid_type, $allowed_types)){
             if(move_uploaded_file($video_temp, $target_path)){
-                $insert_vid = "INSERT INTO videos_tbl(email,video,vid_title,vid_tag,vid_desc,vid_length,vid_quality,is_public,add_at,update_at)VALUES('$login_email','$added_vid','$vid_title','$vid_tag','$vid_desc','$vid_length','$vid_qu','$vid_status',NOW(),NOW())";
+                $insert_vid = "INSERT INTO videos_tbl(email,video,vid_title,vid_tag,vid_desc,is_public,add_at,update_at)VALUES('$login_email','$added_vid','$vid_title','$vid_tag','$vid_desc','$vid_status',NOW(),NOW())";
                 $vid_result = mysqli_query($con, $insert_vid);
 
                 header("location:../my_channel.php");
