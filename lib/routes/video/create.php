@@ -16,7 +16,7 @@
 
     <?php 
         if(isset($_POST['video_add'])){
-            $result = add_new_video($_FILES['video']['name'], $_FILES['video']['tmp_name'], $_POST['video_title'], $_POST['video_tag'], $_POST['video_desc'], $_POST['vid_length'], $_POST['vid_qu'], $_POST['is_public']);
+            $result = add_new_video($_FILES['video']['name'], $_FILES['video']['tmp_name'], $_POST['video_title'], $_POST['video_tag'], $_POST['video_desc'], $_POST['is_public']);
             echo $result;
         }    
     ?>
