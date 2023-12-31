@@ -635,9 +635,13 @@
         $check_video = "SELECT * FROM videos_tbl WHERE vid_tag='$video'";
         $check_result = mysqli_query($con, $check_video);
         $video_nor = mysqli_num_rows($check_result);
+
+
     }
 
     function view_videos(){
+        $con = Connection();
+
         if($video_nor != 0){
             if($vid_len == "les10"){
                 $video_les_10 = "SELECT * FROM videos_tbl WHERE vid_length BETWEEN 0:00 AND 10:00 && vid_tag='$video'";
