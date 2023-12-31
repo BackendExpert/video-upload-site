@@ -173,7 +173,8 @@ These files are protected from users by the `admin_access()` function
 - developing user admin dashborads
 - functions
 - - Update-> search_videos()
-- - 
+- - view_videos()
+
 
 
 ## Version 1.3.0-beta1 27 December 2023
