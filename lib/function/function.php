@@ -638,7 +638,8 @@
 
         $video_s = strval($_SESSION['video_search']);
 
-        $search_vid = "SELECT * FROM videos_tbl WHERE "
+        $search_vid = "SELECT * FROM videos_tbl WHERE vid_tag = '$video_s' && is_public = 1";
+        $search_result = mysqli_query($con, $search_vid);
     }
 
     function all_vides(){
