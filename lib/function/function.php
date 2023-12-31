@@ -661,7 +661,7 @@
                     }
                 }else{
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                                    <strong>ERROR : </strong> This Type not valied...!
+                                    <strong>Video Not Found : </strong> Videos Not Found in This range...!
                                     <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                             </div>";
                 }
