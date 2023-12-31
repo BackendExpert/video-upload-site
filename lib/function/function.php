@@ -638,7 +638,8 @@
         $video_nor = mysqli_num_rows($check_result);
 
         if($video_nor != 0){
-            $video_les_10 = "SELECT * FROM videos_tbl";
+            if($vid_len == "les10")
+            $video_les_10 = "SELECT * FROM videos_tbl ";
         }
 
 
