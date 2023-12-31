@@ -692,6 +692,10 @@
         }
     }
 
+    function to_dashboard(){
+        $con = Connection();
+    }
+
 
 
 ?>
