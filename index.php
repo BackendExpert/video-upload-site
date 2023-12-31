@@ -24,7 +24,7 @@
                     <?php   
                         
                         if(isset($_POST['search_vid'])){
-                            $result = search_videos($_POST['search'], $_POST['vid_len'], $_POST['vid_qualty']);
+                            $result = search_videos($_POST['search']);
                             echo $result;
                         }
                     ?>
