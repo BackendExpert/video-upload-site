@@ -71,6 +71,8 @@
         ?>
             <a href="lib/routes/video/create.php"><button class="jkbtn jkbtn-blue"><i class="fas fa-plus"></i> Add New Video</button></a>
             <hr>
+
+            <?php view_videos(); ?>
         <?php
             }
         ?>
