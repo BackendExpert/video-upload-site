@@ -610,9 +610,7 @@
         $select_result = mysqli_query($con, $select_vid);
         
         while($video_row = mysqli_fetch_assoc($select_result)){
-            $video_view = "                          
-
-
+            $video_view = " 
             <div class='col-auto' style='margin-bottom:20px;'>
                 <a href='video/video_info.php?id=".$video_row['id']."'>
                     <div class='card-body'>
@@ -649,7 +647,20 @@
         $all_videos_result = mysqli_query($con, $all_videos);
 
         while($row = mysqli_fetch_assoc($all_videos_result)){
-            
+            $video_view = " 
+            <div class='col-auto' style='margin-bottom:20px;'>
+                <a href='lib/routes/video/video_info.php?id=".$row['id']."'>
+                    <div class='card-body'>
+                        <video src='videos/".$row['video']."' class='vid-small'></video>
+                        <div class='title-video'>
+                            <span class='title' >Video Title : ".$row['vid_title']."</span>
+                        </div>
+                    </div>
+                </a>
+            </div>   
+            ";
+
+            echo $video_view;
         }
     }
 
