@@ -635,6 +635,10 @@
         $check_video = "SELECT * FROM videos_tbl WHERE vid_tag='$video'";
         $check_result = mysqli_query($con, $check_video);
         $video_row = mysqli_fetch_assoc($check_result);
+
+        $video_view = "";
+
+        echo $video_view;
     }
 
 ?>
