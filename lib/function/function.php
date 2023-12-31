@@ -643,7 +643,7 @@
     function all_vides(){
         $con = Connection();
 
-        $all_videos = "SELECT * FROM videos_tbl WHERE ";
+        $all_videos = "SELECT * FROM videos_tbl WHERE is_public = 1 ";
         $all_videos_result = mysqli_query($con, $all_videos);
 
         while($row = mysqli_fetch_assoc($all_videos_result)){
