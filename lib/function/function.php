@@ -664,10 +664,9 @@
                                     <strong>Video Not Found : </strong> Videos Not Found in This range...!
                                     <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                             </div>";
-                }
-
-
-
+                }                
+            }
+            else if($vid_len == "10to20"){
                 
             }
             
