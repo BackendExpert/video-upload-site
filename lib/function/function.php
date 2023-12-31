@@ -646,11 +646,11 @@
                     while($row_len10 = mysqli_fetch_assoc($len10_result)){
                         $video_view = "
                             <div class='col-auto' style='margin-bottom:20px;'>
-                                <a href='lib/routes/video/video_info.php?id=".$video_row['id']."'>
+                                <a href='lib/routes/video/video_info.php?id=".$row_len10['id']."'>
                                     <div class='card-body'>
-                                        <video src='lib/routes/videos/".$video_row['video']."' class='vid-small'></video>
+                                        <video src='lib/routes/videos/".$row_len10['video']."' class='vid-small'></video>
                                         <div class='title-video'>
-                                            <span class='title' >Video Title : ".$video_row['vid_title']."</span>
+                                            <span class='title' >Video Title : ".$row_len10['vid_title']."</span>
                                         </div>
                                     </div>
                                 </a>
@@ -671,15 +671,15 @@
                 $v20to10_result = mysqli_query($con, $video_10to20);
                 $v20to10_nor = mysqli_num_row($v20to10_result);
 
-                if($len10_nor != 0){
-                    while($row_len10 = mysqli_fetch_assoc($len10_result)){
+                if($v20to10_nor != 0){
+                    while($row_10to20 = mysqli_fetch_assoc($len10_result)){
                         $video_view = "
                             <div class='col-auto' style='margin-bottom:20px;'>
-                                <a href='lib/routes/video/video_info.php?id=".$video_row['id']."'>
+                                <a href='lib/routes/video/video_info.php?id=".$v20to10_nor['id']."'>
                                     <div class='card-body'>
-                                        <video src='lib/routes/videos/".$video_row['video']."' class='vid-small'></video>
+                                        <video src='lib/routes/videos/".$v20to10_nor['video']."' class='vid-small'></video>
                                         <div class='title-video'>
-                                            <span class='title' >Video Title : ".$video_row['vid_title']."</span>
+                                            <span class='title' >Video Title : ".$v20to10_nor['vid_title']."</span>
                                         </div>
                                     </div>
                                 </a>
