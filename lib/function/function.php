@@ -704,7 +704,7 @@
             echo "<a href='lib/routes/admin.php'><button class='jkbtn jkbtn-green'><i class='fas fa-tachometer-alt'></i> To Dashboard</button></a>";
         }
         elseif($select_row['user_type'] == "user"){
-            header("location:lib/routes/user.php");
+            echo "<a href='lib/routes/user.php'><button class='jkbtn jkbtn-green'><i class='fas fa-tachometer-alt'></i> To Dashboard</button></a>";
         }
 
     }
