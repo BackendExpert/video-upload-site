@@ -640,7 +640,11 @@
 
         $search_vid = "SELECT * FROM videos_tbl WHERE vid_tag = '$video_s' && is_public = 1";
         $search_result = mysqli_query($con, $search_vid);
+        $search_nor = mysqli_num_rows($search_result);
 
+        if($search_nor != 0){
+            
+        }
         while($row = mysqli_fetch_assoc($search_result)){
             $video_view = " 
             <div class='col-auto' style='margin-bottom:20px; text-decoration: none;'>
@@ -654,7 +658,6 @@
                 </a>
             </div>   
             ";
-
             echo $video_view;
         }
     }
