@@ -174,6 +174,8 @@ These files are protected from users by the `admin_access()` function
 - functions
 - - Update-> search_videos()
 - - view_videos()
+- - all_vides()
+
 
 
 
