@@ -698,7 +698,11 @@
 
         $select_user = "SELECT * FROM user_tbl WHERE email = '$login_email'";
         $select_result = mysqli_query($con, $select_user);
+        $select_row = mysqli_fetch_assoc($select_result);
+
         
+
+
     }
 
 
