@@ -642,7 +642,20 @@
         $search_result = mysqli_query($con, $search_vid);
 
         while($row = mysqli_fetch_assoc($search_result)){
-            
+            $video_view = " 
+            <div class='col-auto' style='margin-bottom:20px; text-decoration: none;'>
+                <a href='lib/routes/video/video_info.php?id=".$row['id']."'>
+                    <div class='card-body'>
+                        <video src='lib/routes/videos/".$row['video']."' class='vid-small'></video>
+                        <div class='title-video'>
+                            <h3>".$row['vid_title']."</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>   
+            ";
+
+            echo $video_view;
         }
     }
 
