@@ -50,7 +50,7 @@
             if(isset($_SESSION['loginSession'])){
         ?>
             <a href="lib/routes/video/create.php"><button class="jkbtn jkbtn-blue"><i class="fas fa-plus"></i> Add New Video</button></a>
-            <button class="jkbtn jkbtn-green"><i class="fas fa-tachometer-alt"></i> To Dashboard <?php to_dashboard(); ?></button>
+            <button class="jkbtn jkbtn-green"><i class=""></i> To Dashboard <?php to_dashboard(); ?></button>
             <hr>
 
         <?php

@@ -701,7 +701,7 @@
         $select_row = mysqli_fetch_assoc($select_result);
 
         if($select_row['user_type'] == "admin"){
-            echo "<a href='lib/routes/admin.php'><button class='jkbtn jkbtn-green'><i class=''></i></button></a>";
+            echo "<a href='lib/routes/admin.php'><button class='jkbtn jkbtn-green'><i class='fas fa-tachometer-alt'></i> To Dashboard</button></a>";
         }
         elseif($select_row['user_type'] == "user"){
             header("location:lib/routes/user.php");
