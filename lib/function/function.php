@@ -642,6 +642,10 @@
         echo $video_s;
     }
 
+    function all_vides(){
+        $con = Connection();
+    }
+
 
 
 ?>
