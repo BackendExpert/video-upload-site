@@ -637,7 +637,8 @@
         $con = Connection();
 
         $video_s = strval($_SESSION['video_search']);
-        echo $video_s;
+
+        $search_vid = "SELECT * FROM videos_tbl WHERE "
     }
 
     function all_vides(){
