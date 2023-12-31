@@ -644,7 +644,7 @@
                 while($row_len10 = mysqli_fetch_assoc($len10_result)){
                     $video_view = "
                         <div class='col-auto' style='margin-bottom:20px;'>
-                            <a href='video/video_info.php?id=".$video_row['id']."'>
+                            <a href='lib/routes/video/video_info.php?id=".$video_row['id']."'>
                                 <div class='card-body'>
                                     <video src='videos/".$video_row['video']."' class='vid-small'></video>
                                     <div class='title-video'>
