@@ -640,13 +640,15 @@
             if($vid_len == "les10"){
                 $video_les_10 = "SELECT * FROM videos_tbl WHERE vid_length BETWEEN 0:00 AND 10:00";
                 $len10_result = mysqli_query($con, $video_les_10);
-                $Len10_row = mysqli_fetch_assoc($len10_result);
+                while($row_len10 = mysqli_fetch_assoc($len10_result)){
+                    $video_view = "
 
-                $video_view = "
+                    ";
 
-                ";
+                    echo $video_view;
+                }
 
-                echo $video_view;
+                
             }
             
         }
