@@ -659,8 +659,8 @@
                 echo $video_view;
             }
         }
-        else{
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+        else if($search_nor == 0){
+            echo  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>No Videos Found: </strong> According to your search There are no Videos
                         <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                 </div>";
