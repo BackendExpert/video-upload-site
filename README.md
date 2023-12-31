@@ -171,6 +171,8 @@ These files are protected from users by the `admin_access()` function
 
 ## all_vides()
 
+- This function will display the all public videos on the database
+
 ## to_dashboard()
 
 # Releases
