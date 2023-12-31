@@ -638,25 +638,35 @@
 
         if($video_nor != 0){
             if($vid_len == "les10"){
-                $video_les_10 = "SELECT * FROM videos_tbl WHERE vid_length BETWEEN 0:00 AND 10:00";
+                $video_les_10 = "SELECT * FROM videos_tbl WHERE vid_length BETWEEN 0:00 AND 10:00 && vid_tag='$video'";
                 $len10_result = mysqli_query($con, $video_les_10);
+                $len10_nor = mysqli_num_row($len10_result);
 
-                while($row_len10 = mysqli_fetch_assoc($len10_result)){
-                    $video_view = "
-                        <div class='col-auto' style='margin-bottom:20px;'>
-                            <a href='lib/routes/video/video_info.php?id=".$video_row['id']."'>
-                                <div class='card-body'>
-                                    <video src='lib/routes/videos/".$video_row['video']."' class='vid-small'></video>
-                                    <div class='title-video'>
-                                        <span class='title' >Video Title : ".$video_row['vid_title']."</span>
+                if($len10_nor != 0){
+                    while($row_len10 = mysqli_fetch_assoc($len10_result)){
+                        $video_view = "
+                            <div class='col-auto' style='margin-bottom:20px;'>
+                                <a href='lib/routes/video/video_info.php?id=".$video_row['id']."'>
+                                    <div class='card-body'>
+                                        <video src='lib/routes/videos/".$video_row['video']."' class='vid-small'></video>
+                                        <div class='title-video'>
+                                            <span class='title' >Video Title : ".$video_row['vid_title']."</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>   
-                        ";                   
-
-                    echo $video_view;
+                                </a>
+                            </div>   
+                            ";                   
+    
+                        echo $video_view;
+                    }
+                }else{
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                    <strong>ERROR : </strong> This Type not valied...!
+                                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                            </div>";
                 }
+
+
 
                 
             }
