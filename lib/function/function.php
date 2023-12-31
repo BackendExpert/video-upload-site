@@ -695,6 +695,10 @@
         $con = Connection();
 
         $login_email = strval($_SESSION['loginSession']);
+
+        $select_user = "SELECT * FROM user_tbl WHERE email = '$login_email'";
+        $select_result = mysqli_query($con, $select_user);
+        
     }
 
 
