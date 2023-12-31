@@ -659,6 +659,12 @@
                 echo $video_view;
             }
         }
+        else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>ERROR : </strong> This Type not valied...!
+                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>";
+        }
 
     }
 
