@@ -632,13 +632,7 @@
     function search_videos($video){
         $con = Connection();
 
-        $check_video = "SELECT * FROM videos_tbl WHERE vid_tag='$video'";
-        $check_result = mysqli_query($con, $check_video);
-        $video_nor = mysqli_num_rows($check_result);
-        $video_info = array($video, $vid_len, $vid_qulty);
-
-        $_SESSION["Video_S"] = $video_info;
-
+        $_SESSION['video_search'] = $video;
     }
 
     function view_videos(){
