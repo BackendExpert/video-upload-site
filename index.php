@@ -53,7 +53,12 @@
             <hr>
 
         <?php
-            
+            if(isset($_POST['search_vid'])){
+
+            }
+            else{
+                
+            }
         ?>
         <?php
             }
