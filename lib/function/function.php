@@ -640,10 +640,20 @@
             if($vid_len == "les10"){
                 $video_les_10 = "SELECT * FROM videos_tbl WHERE vid_length BETWEEN 0:00 AND 10:00";
                 $len10_result = mysqli_query($con, $video_les_10);
+
                 while($row_len10 = mysqli_fetch_assoc($len10_result)){
                     $video_view = "
-
-                    ";
+                        <div class='col-auto' style='margin-bottom:20px;'>
+                            <a href='video/video_info.php?id=".$video_row['id']."'>
+                                <div class='card-body'>
+                                    <video src='videos/".$video_row['video']."' class='vid-small'></video>
+                                    <div class='title-video'>
+                                        <span class='title' >Video Title : ".$video_row['vid_title']."</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>   
+                        ";                   
 
                     echo $video_view;
                 }
