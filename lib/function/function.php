@@ -700,8 +700,12 @@
         $select_result = mysqli_query($con, $select_user);
         $select_row = mysqli_fetch_assoc($select_result);
 
-        
-
+        if($select_row['user_type'] == "admin"){
+            header("location:lib/routes/admin.php");
+        }
+        elseif($select_row['user_type'] == "user"){
+            header("location:lib/routes/user.php");
+        }
 
     }
 
