@@ -648,12 +648,12 @@
 
         while($row = mysqli_fetch_assoc($all_videos_result)){
             $video_view = " 
-            <div class='col-auto' style='margin-bottom:20px;'>
+            <div class='col-auto' style='margin-bottom:20px; text-decoration: none;'>
                 <a href='lib/routes/video/video_info.php?id=".$row['id']."'>
                     <div class='card-body'>
-                        <video src='videos/".$row['video']."' class='vid-small'></video>
+                        <video src='lib/routes/videos/".$row['video']."' class='vid-small'></video>
                         <div class='title-video'>
-                            <span class='title' >Video Title : ".$row['vid_title']."</span>
+                            <h3 class='title'>".$row['vid_title']."</h3>
                         </div>
                     </div>
                 </a>
