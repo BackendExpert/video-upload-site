@@ -635,7 +635,7 @@
         $check_video = "SELECT * FROM videos_tbl WHERE vid_tag='$video'";
         $check_result = mysqli_query($con, $check_video);
         $video_nor = mysqli_num_rows($check_result);
-        $video_info = array($vido, $vid_len, $vid_qulty);
+        $video_info = array($video, $vid_len, $vid_qulty);
 
         $_SESSION["Video_S"] = $video_info;
 
@@ -645,7 +645,10 @@
         $con = Connection();
 
 
+        $info_video = $_SESSION['Video_S'];
+        $vide_name = $info_video['video'];
 
+        echo $vide_name;
         
         
 
