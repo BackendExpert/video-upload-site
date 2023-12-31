@@ -175,6 +175,8 @@ These files are protected from users by the `admin_access()` function
 
 ## to_dashboard()
 
+- This function will help to user to go to dashboard according to the `user_type`
+
 # Releases
 
 ## Version 1.3.0 01 January 2024
