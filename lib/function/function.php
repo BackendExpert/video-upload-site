@@ -602,8 +602,7 @@
 
     function private_videos(){
         $con = Connection();
-        
-        $con = Connection();
+
         $login_email = strval($_SESSION['loginSession']);
 
         $select_vid = "SELECT * FROM videos_tbl WHERE email = '$login_email' && is_public = '0'";
@@ -694,6 +693,8 @@
 
     function to_dashboard(){
         $con = Connection();
+
+        $login_email = strval($_SESSION['loginSession']);
     }
 
 
