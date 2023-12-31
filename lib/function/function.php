@@ -632,7 +632,7 @@
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
 
-        
+        $check_video = "SELECT * FROM videos_tbl WHERE"
     }
 
 ?>
