@@ -643,23 +643,23 @@
         $search_nor = mysqli_num_rows($search_result);
 
         if($search_nor != 0){
-            
-        }
-        while($row = mysqli_fetch_assoc($search_result)){
-            $video_view = " 
-            <div class='col-auto' style='margin-bottom:20px; text-decoration: none;'>
-                <a href='lib/routes/video/video_info.php?id=".$row['id']."'>
-                    <div class='card-body'>
-                        <video src='lib/routes/videos/".$row['video']."' class='vid-small'></video>
-                        <div class='title-video'>
-                            <h3>".$row['vid_title']."</h3>
+            while($row = mysqli_fetch_assoc($search_result)){
+                $video_view = " 
+                <div class='col-auto' style='margin-bottom:20px; text-decoration: none;'>
+                    <a href='lib/routes/video/video_info.php?id=".$row['id']."'>
+                        <div class='card-body'>
+                            <video src='lib/routes/videos/".$row['video']."' class='vid-small'></video>
+                            <div class='title-video'>
+                                <h3>".$row['vid_title']."</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>   
-            ";
-            echo $video_view;
+                    </a>
+                </div>   
+                ";
+                echo $video_view;
+            }
         }
+
     }
 
     function all_vides(){
