@@ -638,6 +638,8 @@
     function view_videos(){
         $con = Connection();
 
+        $video_s = strval($_SESSION['video_search']);
+        echo $video_s;
     }
 
 
