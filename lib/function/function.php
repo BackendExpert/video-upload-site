@@ -632,7 +632,9 @@
     function search_videos($video, $vid_len, $vid_qulty){
         $con = Connection();
 
-        $check_video = "SELECT * FROM videos_tbl WHERE"
+        $check_video = "SELECT * FROM videos_tbl WHERE vid_tag='$video'";
+        $check_result = mysqli_query($con, $check_video);
+        $video_row = mysqli_fetch_assoc($check_result);
     }
 
 ?>
