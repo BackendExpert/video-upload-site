@@ -640,6 +640,10 @@
 
         $search_vid = "SELECT * FROM videos_tbl WHERE vid_tag = '$video_s' && is_public = 1";
         $search_result = mysqli_query($con, $search_vid);
+
+        while($row = mysqli_fetch_assoc($search_result)){
+            
+        }
     }
 
     function all_vides(){
