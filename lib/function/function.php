@@ -667,7 +667,9 @@
                 }                
             }
             else if($vid_len == "10to20"){
-                
+                $video_10to20 = "SELECT * FROM videos_tbl WHERE vid_length BETWEEN 10:01 AND 20:00 && vid_tag='$video'";
+                $v20to10_result = mysqli_query($con, $video_10to20);
+                $v20to10_nor = mysqli_num_row($v20to10_result);
             }
             
         }       
