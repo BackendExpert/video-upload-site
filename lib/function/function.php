@@ -643,7 +643,7 @@
     function all_vides(){
         $con = Connection();
 
-        $all_videos = "SELECT * FROM videos_tbl";
+        $all_videos = "SELECT * FROM videos_tbl WHERE ";
         $all_videos_result = mysqli_query($con, $all_videos);
 
         while($row = mysqli_fetch_assoc($all_videos_result)){
@@ -653,7 +653,7 @@
                     <div class='card-body'>
                         <video src='lib/routes/videos/".$row['video']."' class='vid-small'></video>
                         <div class='title-video'>
-                            <h3 class='title'>".$row['vid_title']."</h3>
+                            <h3>".$row['vid_title']."</h3>
                         </div>
                     </div>
                 </a>
