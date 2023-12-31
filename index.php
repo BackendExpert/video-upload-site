@@ -68,8 +68,17 @@
                 
         <?php
             }
-            }
+            }else{
         ?>
+            <div class="row">
+                <?php all_vides(); ?>
+            </div>
+        <?php
+            }      
+        ?>
+
+
+
         <br><br>       
 
     </div>
