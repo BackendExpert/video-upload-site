@@ -35,6 +35,7 @@
                                 <input type="text" name="search" id="" placeholder="Search" class="form-control" required>
                             </div>
                         </div>
+                        <br>
                         <div class="row">
                             <div class="col-lg-12">
                                 <input type="submit" value="Search Videos" name="search_vid" class="jkbtn jkbtn-green">
