@@ -636,78 +636,81 @@
         $check_result = mysqli_query($con, $check_video);
         $video_nor = mysqli_num_rows($check_result);
 
+        $_SESSION["Video_S"] = [$vido, $vid_len, $vid_qulty];
 
     }
 
     function view_videos(){
         $con = Connection();
 
-        if($video_nor != 0){
-            if($vid_len == "les10"){
-                $video_les_10 = "SELECT * FROM videos_tbl WHERE vid_length BETWEEN 0:00 AND 10:00 && vid_tag='$video'";
-                $len10_result = mysqli_query($con, $video_les_10);
-                $len10_nor = mysqli_num_row($len10_result);
+        
 
-                if($len10_nor != 0){
-                    while($row_len10 = mysqli_fetch_assoc($len10_result)){
-                        $video_view = "
-                            <div class='col-auto' style='margin-bottom:20px;'>
-                                <a href='lib/routes/video/video_info.php?id=".$row_len10['id']."'>
-                                    <div class='card-body'>
-                                        <video src='lib/routes/videos/".$row_len10['video']."' class='vid-small'></video>
-                                        <div class='title-video'>
-                                            <span class='title' >Video Title : ".$row_len10['vid_title']."</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>   
-                            ";                   
-    
-                        echo $video_view;
-                    }
-                }else{
-                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                                    <strong>Video Not Found : </strong> Videos Not Found in This range...!
-                                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                            </div>";
-                }                
-            }
-            else if($vid_len == "10to20"){
-                $video_10to20 = "SELECT * FROM videos_tbl WHERE vid_length BETWEEN 10:01 AND 20:00 && vid_tag='$video'";
-                $v20to10_result = mysqli_query($con, $video_10to20);
-                $v20to10_nor = mysqli_num_row($v20to10_result);
+        // if($video_nor != 0){
+        //     if($vid_len == "les10"){
+        //         $video_les_10 = "SELECT * FROM videos_tbl WHERE vid_length BETWEEN 0:00 AND 10:00 && vid_tag='$video'";
+        //         $len10_result = mysqli_query($con, $video_les_10);
+        //         $len10_nor = mysqli_num_row($len10_result);
 
-                if($v20to10_nor != 0){
-                    while($row_10to20 = mysqli_fetch_assoc($len10_result)){
-                        $video_view = "
-                            <div class='col-auto' style='margin-bottom:20px;'>
-                                <a href='lib/routes/video/video_info.php?id=".$v20to10_nor['id']."'>
-                                    <div class='card-body'>
-                                        <video src='lib/routes/videos/".$v20to10_nor['video']."' class='vid-small'></video>
-                                        <div class='title-video'>
-                                            <span class='title' >Video Title : ".$v20to10_nor['vid_title']."</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>   
-                            ";                   
+        //         if($len10_nor != 0){
+        //             while($row_len10 = mysqli_fetch_assoc($len10_result)){
+        //                 $video_view = "
+        //                     <div class='col-auto' style='margin-bottom:20px;'>
+        //                         <a href='lib/routes/video/video_info.php?id=".$row_len10['id']."'>
+        //                             <div class='card-body'>
+        //                                 <video src='lib/routes/videos/".$row_len10['video']."' class='vid-small'></video>
+        //                                 <div class='title-video'>
+        //                                     <span class='title' >Video Title : ".$row_len10['vid_title']."</span>
+        //                                 </div>
+        //                             </div>
+        //                         </a>
+        //                     </div>   
+        //                     ";                   
     
-                        echo $video_view;
-                    }
-                }else{
-                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                                    <strong>Video Not Found : </strong> Videos Not Found in This range...!
-                                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                            </div>";
-                }  
-            }
+        //                 echo $video_view;
+        //             }
+        //         }else{
+        //             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+        //                             <strong>Video Not Found : </strong> Videos Not Found in This range...!
+        //                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+        //                     </div>";
+        //         }                
+        //     }
+        //     else if($vid_len == "10to20"){
+        //         $video_10to20 = "SELECT * FROM videos_tbl WHERE vid_length BETWEEN 10:01 AND 20:00 && vid_tag='$video'";
+        //         $v20to10_result = mysqli_query($con, $video_10to20);
+        //         $v20to10_nor = mysqli_num_row($v20to10_result);
+
+        //         if($v20to10_nor != 0){
+        //             while($row_10to20 = mysqli_fetch_assoc($len10_result)){
+        //                 $video_view = "
+        //                     <div class='col-auto' style='margin-bottom:20px;'>
+        //                         <a href='lib/routes/video/video_info.php?id=".$v20to10_nor['id']."'>
+        //                             <div class='card-body'>
+        //                                 <video src='lib/routes/videos/".$v20to10_nor['video']."' class='vid-small'></video>
+        //                                 <div class='title-video'>
+        //                                     <span class='title' >Video Title : ".$v20to10_nor['vid_title']."</span>
+        //                                 </div>
+        //                             </div>
+        //                         </a>
+        //                     </div>   
+        //                     ";                   
+    
+        //                 echo $video_view;
+        //             }
+        //         }else{
+        //             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+        //                             <strong>Video Not Found : </strong> Videos Not Found in This range...!
+        //                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+        //                     </div>";
+        //         }  
+        //     }
             
-        }else{
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>Videos : </strong>  Not Found
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                    </div>";
-        }      
+        // }else{
+        //     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+        //                     <strong>Videos : </strong>  Not Found
+        //                     <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+        //             </div>";
+        // }      
 
     }
 
