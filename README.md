@@ -164,6 +164,13 @@ These files are protected from users by the `admin_access()` function
 
 - This fuction shows the all private videos uploaded by current login user
 
+## view_videos()
+
+- This function for
+
+## all_vides()
+
+## to_dashboard()
 
 # Releases
 
