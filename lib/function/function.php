@@ -644,9 +644,9 @@
     function view_videos(){
         $con = Connection();
 
-        
 
-        echo $video_s;
+
+        
         
 
         // if($video_nor != 0){
