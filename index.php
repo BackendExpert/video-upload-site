@@ -54,10 +54,10 @@
 
         <?php
             if(isset($_POST['search_vid'])){
-
+                view_videos();
             }
             else{
-                
+                all_vides();
             }
         ?>
         <?php
